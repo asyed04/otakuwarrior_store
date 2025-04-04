@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admins
-  
-  namespace :admin do
-    get 'dashboard', to: 'dashboard#index'
-  end
+  ActiveAdmin.routes(self)
 
-  root "admin/dashboard#index" # temporary for quick testing
+  root to: "admin/dashboard#index" # optional
 end
