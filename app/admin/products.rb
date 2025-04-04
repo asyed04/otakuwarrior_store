@@ -1,6 +1,5 @@
 ActiveAdmin.register Product do
-  # Only the necessary fields
-  permit_params :name, :description, :price, :stock_quantity, :category, :image
+  permit_params :name, :description, :price, :stock_quantity, :category_id, :image
 
   index do
     selectable_column
@@ -18,13 +17,15 @@ ActiveAdmin.register Product do
     actions
   end
 
+  filter :category  # uses association
+
   form do |f|
     f.inputs do
       f.input :name
       f.input :description
       f.input :price
       f.input :stock_quantity
-      f.input :category
+      f.input :category, as: :select, collection: Category.all
       f.input :image, as: :file
     end
     f.actions

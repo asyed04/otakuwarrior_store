@@ -1,0 +1,35 @@
+<h2>Categories</h2>
+<ul>
+  <% @categories.each do |category| %>
+    <li>
+      <%= link_to category.name, store_category_path(category) %>
+    </li>
+  <% end %>
+</ul>
+
+<h1>All Products</h1>
+
+<div class="row">
+  <% @products.each do |product| %>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <% if product.image.attached? %>
+          <%= image_tag product.image.variant(resize_to_limit: [300, 300]), class: "card-img-top" %>
+        <% else %>
+          <p class="text-center mt-3">No Image</p>
+        <% end %>
+
+        <div class="card-body">
+          <h5 class="card-title"><%= product.name %></h5>
+          <p><%= truncate(product.description, length: 100) %></p>
+          <p><strong>Price:</strong> $<%= product.price %></p>
+          <a href="#" class="btn btn-primary">View Details</a> <!-- will link later -->
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<h1>Storefront</h1>
+<% @products.each do |product| %>
+  <p><%= product.name %></p>
+<% end %>
