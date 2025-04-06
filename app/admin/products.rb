@@ -1,4 +1,8 @@
 ActiveAdmin.register Product do
+  include Rails.application.routes.url_helpers
+
+  config.clear_action_items!  # optional, if you want to clear buttons like 'New Product'
+
   permit_params :name, :description, :price, :stock_quantity, :category_id, :image
 
   index do
@@ -17,7 +21,7 @@ ActiveAdmin.register Product do
     actions
   end
 
-  filter :category  # uses association
+  filter :category
 
   form do |f|
     f.inputs do

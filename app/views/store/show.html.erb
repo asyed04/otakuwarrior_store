@@ -1,0 +1,14 @@
+<h1><%= @product.name %></h1>
+
+<% if @product.image.attached? %>
+  <%= image_tag @product.image.variant(resize_to_limit: [400, 400]), class: "mb-3" %>
+<% else %>
+  <p>No Image Available</p>
+<% end %>
+
+<p><strong>Description:</strong> <%= @product.description %></p>
+<p><strong>Price:</strong> $<%= @product.price %></p>
+<p><strong>Stock:</strong> <%= @product.stock_quantity %></p>
+<p><strong>Category:</strong> <%= @product.category.name %></p>
+
+<%= link_to "← Back to Store", store_path, class: "btn btn-secondary mt-3" %>
