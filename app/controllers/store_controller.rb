@@ -28,4 +28,20 @@ class StoreController < ApplicationController
     @products = Product.on_sale.includes(:category, image_attachment: :blob).page(params[:page]).per(6)
     render :index
   end
+  def search
+    @categories = Category.all
+    @products = Product.includes(:category, image_attachment: :blob)
+  
+    if params[:query].present?
+      query = "%#{params[:query].downcase}%"
+      @products = @products.where("LOWER(name) LIKE ? OR LOWER(description) LIKE ?", query, query)
+    end
+  
+    if params[:category_id].present?
+      @products = @products.where(category_id: params[:category_id])
+    end
+  
+    @products = @products.page(params[:page]).per(6)
+    render :index
+  end  
 end
