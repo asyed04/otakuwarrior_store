@@ -1,10 +1,8 @@
 ActiveAdmin.register Product do
   include Rails.application.routes.url_helpers
 
-  config.clear_action_items!  # optional, if you want to clear buttons like 'New Product'
-
-  permit_params :name, :description, :price, :stock_quantity, :category_id, :image
-
+  permit_params :name, :description, :price, :stock_quantity, :category_id, :image, :sale_price, :on_sale
+  
   index do
     selectable_column
     column :name
@@ -31,6 +29,8 @@ ActiveAdmin.register Product do
       f.input :stock_quantity
       f.input :category, as: :select, collection: Category.all
       f.input :image, as: :file
+      f.input :sale_price
+      f.input :on_sale
     end
     f.actions
   end

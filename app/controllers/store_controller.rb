@@ -16,4 +16,26 @@ class StoreController < ApplicationController
   def show
     @product = Product.find(params[:id])
   end
+  def new_products
+    @categories = Category.all
+    @products = Product.where('created_at >= ?', 3.days.ago)
+    render :index
+  end
+  
+  def on_sale
+    @categories = Category.all
+    @products = Product.where(on_sale: true)
+    render :index
+  end
+  def on_sale
+    @products = Product.on_sale.includes(:category, image_attachment: :blob)
+    @categories = Category.all
+    render :index
+  end
+  
+  def new_products
+    @products = Product.new_products.includes(:category, image_attachment: :blob)
+    @categories = Category.all
+    render :index
+  end  
 end

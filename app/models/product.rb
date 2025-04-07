@@ -1,13 +1,16 @@
 class Product < ApplicationRecord
-    def self.ransackable_attributes(auth_object = nil)
-      %w[category created_at description id name price stock_quantity updated_at]
-    end      
-  
-    def self.ransackable_associations(auth_object = nil)
-      %w[image_attachment image_blob category]
-    end
-  
-    has_one_attached :image
-    belongs_to :category
+  def self.ransackable_attributes(auth_object = nil)
+    %w[category created_at description id name price stock_quantity updated_at]
+  end      
+
+  def self.ransackable_associations(auth_object = nil)
+    %w[image_attachment image_blob category]
   end
-  
+
+  has_one_attached :image
+  belongs_to :category
+
+  # 🔽 Scopes for filtering
+  scope :on_sale, -> { where(on_sale: true) }
+  scope :new_products, -> { where('created_at >= ?', 3.days.ago) }
+end

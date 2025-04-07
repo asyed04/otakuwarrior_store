@@ -73,4 +73,7 @@ gem 'activeadmin'
 
 gem 'sassc'
 
+gem 'kaminari'
+
+
 
