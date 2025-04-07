@@ -37,5 +37,16 @@ class StoreController < ApplicationController
     @products = Product.new_products.includes(:category, image_attachment: :blob)
     @categories = Category.all
     render :index
+  end 
+  def index
+    @categories = Category.all
+    @products = Product.includes(:category, image_attachment: :blob).page(params[:page]).per(6)
+  end
+  
+  def category
+    @categories = Category.all
+    @category = Category.find(params[:id])
+    @products = @category.products.includes(image_attachment: :blob).page(params[:page]).per(6)
+    render :index
   end  
 end
