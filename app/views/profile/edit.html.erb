@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1>Edit Profile</h1>
+    
+    <div class="card">
+      <div class="card-body">
+        <%= form_with(model: @customer, url: update_profile_path, method: :patch) do |form| %>
+          <% if @customer.errors.any? %>
+            <div class="alert alert-danger">
+              <h4><%= pluralize(@customer.errors.count, "error") %> prohibited this profile from being saved:</h4>
+              <ul>
+                <% @customer.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          
+          <div class="mb-3">
+            <%= form.label :name, class: "form-label" %>
+            <%= form.text_field :name, class: "form-control" %>
+          </div>
+          
+          <div class="mb-3">
+            <%= form.label :email, class: "form-label" %>
+            <%= form.email_field :email, class: "form-control" %>
+          </div>
+          
+          <div class="mb-3">
+            <%= form.label :address, class: "form-label" %>
+            <%= form.text_field :address, class: "form-control" %>
+          </div>
+          
+          <div class="mb-3">
+            <%= form.label :city, class: "form-label" %>
+            <%= form.text_field :city, class: "form-control" %>
+          </div>
+          
+          <div class="mb-3">
+            <%= form.label :province_id, "Province", class: "form-label" %>
+            <%= form.collection_select :province_id, Province.order(:name), :id, :name, { include_blank: "Select Province" }, class: "form-select" %>
+          </div>
+          
+          <div class="d-flex justify-content-between">
+            <%= form.submit "Update Profile", class: "btn btn-primary" %>
+            <%= link_to "Cancel", profile_path, class: "btn btn-secondary" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
