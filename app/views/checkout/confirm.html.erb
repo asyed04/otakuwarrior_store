@@ -1,0 +1,129 @@
+<h1>Confirm Your Order</h1>
+
+<div class="mb-3">
+  <h5>Customer Info:</h5>
+  <% if @customer.name.present? %>
+    <p><strong>Name:</strong> <%= @customer.name %></p>
+  <% else %>
+    <p><strong>Name:</strong> <em>Not provided</em></p>
+  <% end %>
+  
+  <% if @customer.email.present? && !@customer.email.include?("guest_") %>
+    <p><strong>Email:</strong> <%= @customer.email %></p>
+  <% else %>
+    <p><strong>Email:</strong> <em>Not provided</em></p>
+  <% end %>
+  
+  <p>
+    <strong>Address:</strong> 
+    <% if @customer.address.present? || @customer.city.present? %>
+      <%= @customer.address.presence || "<em>Not provided</em>".html_safe %>,
+      <%= @customer.city.presence || "<em>Not provided</em>".html_safe %>,
+    <% else %>
+      <em>Not provided</em>,
+    <% end %>
+    <%= @province.name %> (<%= @province.code %>)
+  </p>
+</div>
+
+<div class="mb-3">
+  <h5>Order Summary:</h5>
+  <ul>
+    <% @cart_items.each do |item| %>
+      <li>
+        <%= item[:product].name %> (x<%= item[:quantity] %>) — $<%= item[:product].price * item[:quantity] %>
+      </li>
+    <% end %>
+  </ul>
+
+
+
+  <p><strong>Subtotal:</strong> $<%= @subtotal.round(2) %></p>
+
+  <%# Show percentages dynamically %>
+  <% if @gst > 0 %>
+    <p><strong>GST (5%):</strong> $<%= @gst.round(2) %></p>
+  <% end %>
+  
+  <% if @pst > 0 %>
+    <% pst_rate = (@customer.province == "QC" ? "9.975%" : "7%") %>
+    <p><strong>PST (<%= pst_rate %>):</strong> $<%= @pst.round(2) %></p>
+  <% end %>
+  
+  <% if @hst > 0 %>
+    <p><strong>HST (13%):</strong> $<%= @hst.round(2) %></p>
+  <% end %>
+  
+  <p><strong>Total:</strong> <strong>$<%= @total.round(2) %></strong></p>  
+</div>
+
+<div class="row">
+  <div class="col-md-12 mb-4">
+    <div class="card">
+      <div class="card-header">
+        <h5>Payment Options</h5>
+      </div>
+      <div class="card-body">
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="payment_option" id="payment_option_later" value="later" checked>
+          <label class="form-check-label" for="payment_option_later">
+            Place Order Now, Pay Later
+          </label>
+          <p class="text-muted small">Your order will be processed, and you can pay for it later from your account.</p>
+        </div>
+        
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="payment_option" id="payment_option_now" value="now">
+          <label class="form-check-label" for="payment_option_now">
+            Pay Now
+          </label>
+          <p class="text-muted small">Complete your payment immediately using a credit card.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6" id="place_order_form">
+    <%= form_with url: checkout_create_path, method: :post, local: true, id: "order_form" do %>
+      <%= hidden_field_tag "customer_id", @customer.id %>
+      <%= hidden_field_tag "customer[name]", @customer.name %>
+      <%= hidden_field_tag "customer[email]", @customer.email %>
+      <%= hidden_field_tag "customer[address]", @customer.address %>
+      <%= hidden_field_tag "customer[city]", @customer.city %>
+      <%= hidden_field_tag "customer[province_id]", @province.id %>
+      <%= hidden_field_tag "payment_method", "deferred", id: "payment_method_field" %>
+
+      <%= submit_tag "Place Order", class: "btn btn-success" %>
+    <% end %>
+  </div>
+  
+  <div class="col-md-6" id="payment_form" style="display: none;">
+    <%= render 'payment_form' %>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const laterOption = document.getElementById('payment_option_later');
+    const nowOption = document.getElementById('payment_option_now');
+    const placeOrderForm = document.getElementById('place_order_form');
+    const paymentForm = document.getElementById('payment_form');
+    const paymentMethodField = document.getElementById('payment_method_field');
+    
+    laterOption.addEventListener('change', function() {
+      if (this.checked) {
+        placeOrderForm.style.display = 'block';
+        paymentForm.style.display = 'none';
+        paymentMethodField.value = 'deferred';
+      }
+    });
+    
+    nowOption.addEventListener('change', function() {
+      if (this.checked) {
+        placeOrderForm.style.display = 'none';
+        paymentForm.style.display = 'block';
+        paymentMethodField.value = 'immediate';
+      }
+    });
+  });
+</script>
