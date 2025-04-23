@@ -1,0 +1,90 @@
+<h1>Invoice</h1>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h5>Customer Information</h5>
+  </div>
+  <div class="card-body">
+    <% if @customer.name.present? %>
+      <p><strong>Customer:</strong> <%= @customer.name %></p>
+    <% else %>
+      <p><strong>Customer:</strong> <em>Guest</em></p>
+    <% end %>
+    
+    <% if @customer.email.present? && !@customer.email.include?("guest_") %>
+      <p><strong>Email:</strong> <%= @customer.email %></p>
+    <% else %>
+      <p><strong>Email:</strong> <em>Not provided</em></p>
+    <% end %>
+    
+    <% if @customer.address.present? || @customer.city.present? %>
+      <p>
+        <strong>Address:</strong>
+        <%= @customer.address.presence || "<em>Not provided</em>".html_safe %>,
+        <%= @customer.city.presence || "<em>Not provided</em>".html_safe %>
+      </p>
+    <% end %>
+    
+    <p><strong>Province:</strong> <%= @customer.province&.name || @customer.province %></p>
+  </div>
+</div>
+
+<hr>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <h5>Order Summary</h5>
+  </div>
+  <div class="card-body">
+    <p><strong>Order ID:</strong> <%= @order.id %></p>
+    <p><strong>Order Date:</strong> <%= @order.created_at.strftime("%B %d, %Y at %I:%M %p") %></p>
+    
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th class="text-end">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Subtotal</td>
+          <td class="text-end">$<%= sprintf('%.2f', @subtotal) %></td>
+        </tr>
+        
+        <% if @order.gst > 0 %>
+        <tr>
+          <td>GST</td>
+          <td class="text-end">$<%= sprintf('%.2f', @order.gst) %></td>
+        </tr>
+        <% end %>
+        
+        <% if @order.pst > 0 %>
+        <tr>
+          <td>PST</td>
+          <td class="text-end">$<%= sprintf('%.2f', @order.pst) %></td>
+        </tr>
+        <% end %>
+        
+        <% if @order.hst > 0 %>
+        <tr>
+          <td>HST</td>
+          <td class="text-end">$<%= sprintf('%.2f', @order.hst) %></td>
+        </tr>
+        <% end %>
+        
+        <tr class="table-active">
+          <th>Total</th>
+          <th class="text-end">$<%= sprintf('%.2f', @order.total) %></th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="alert alert-success">
+  <h4>Thank you for your order!</h4>
+  <p>Your order has been successfully placed.</p>
+</div>
+
+<%= link_to "Return to Store", store_path, class: "btn btn-primary mt-2" %>

@@ -1,0 +1,222 @@
+<div class="row mb-4">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to "Home", store_path %></li>
+        <li class="breadcrumb-item"><%= link_to "Cart", cart_path %></li>
+        <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between mb-4">
+      <h1 class="mb-3 mb-sm-0"><i class="fas fa-credit-card me-2"></i>Checkout</h1>
+      <%= link_to cart_path, class: "btn btn-outline-primary align-self-start" do %>
+        <i class="fas fa-arrow-left me-1"></i> Back to Cart
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<% if flash[:alert] %>
+  <div class="alert alert-danger alert-dismissible fade show">
+    <i class="fas fa-exclamation-circle me-2"></i><%= flash[:alert] %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+
+<% if flash[:notice] %>
+  <div class="alert alert-success alert-dismissible fade show">
+    <i class="fas fa-check-circle me-2"></i><%= flash[:notice] %>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+
+<% if @customer&.errors&.any? %>
+  <div class="alert alert-danger alert-dismissible fade show">
+    <h5 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>There were problems with your submission:</h5>
+    <ul class="mb-0">
+      <% @customer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+
+<div class="row">
+  <div class="col-lg-8 order-2 order-lg-1">
+    <div class="card checkout-form mb-4">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0"><i class="fas fa-user me-2"></i>Customer Information</h5>
+      </div>
+      <div class="card-body">
+        <div class="alert alert-info d-flex align-items-center">
+          <i class="fas fa-info-circle me-3 fa-lg d-none d-sm-block"></i>
+          <div>
+            <strong>Guest Checkout:</strong> You can checkout as a guest by just selecting your province. All other fields are optional.
+          </div>
+        </div>
+
+        <%= form_with scope: :customer, url: checkout_confirm_path, method: :post, local: true do |f| %>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <%= f.label :name, class: "form-label" %>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <%= f.text_field :name, class: "form-control", placeholder: "Optional" %>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <%= f.label :email, class: "form-label" %>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                <%= f.email_field :email, class: "form-control", placeholder: "Optional" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <%= f.label :address, class: "form-label" %>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-home"></i></span>
+              <%= f.text_field :address, class: "form-control", placeholder: "Optional" %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <%= f.label :city, class: "form-label" %>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-city"></i></span>
+                <%= f.text_field :city, class: "form-control", placeholder: "Optional" %>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <%= f.label :province_id, "Province", class: "form-label" %> <span class="text-danger">*</span>
+              <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                <%= f.collection_select :province_id, 
+                            @provinces, 
+                            :id, 
+                            :name, 
+                            { prompt: "Select Province (Required)" }, 
+                            { class: "form-select", required: true } %>
+              </div>
+              <small class="form-text text-muted">This information is used to calculate taxes.</small>
+            </div>
+          </div>
+
+          <div class="d-grid gap-2 mt-4">
+            <%= f.button type: "submit", class: "btn btn-primary btn-lg" do %>
+              <i class="fas fa-clipboard-check me-2"></i>Review Invoice
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Secure Checkout Info -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <div class="me-3">
+            <i class="fas fa-shield-alt fa-2x text-success"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Secure Checkout</h5>
+            <p class="mb-0 text-muted">Your payment information is encrypted and securely processed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
+    <!-- Order Summary -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0"><i class="fas fa-shopping-basket me-2"></i>Order Summary</h5>
+      </div>
+      <div class="card-body">
+        <% 
+          subtotal = @cart_items.sum do |item|
+            product = item[:product]
+            quantity = item[:quantity]
+            price = product.on_sale && product.sale_price.present? ? product.sale_price : product.price
+            price * quantity
+          end
+          
+          # Placeholder values - these would be calculated after province selection
+          estimated_tax = "Calculated at next step"
+          shipping = 5.99
+        %>
+        
+        <div class="mb-3">
+          <% @cart_items.each do |item| %>
+            <% product = item[:product] %>
+            <% quantity = item[:quantity] %>
+            <% 
+              unit_price = product.on_sale && product.sale_price.present? ? product.sale_price : product.price
+              line_total = unit_price * quantity
+            %>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div>
+                <span class="fw-bold"><%= product.name %></span>
+                <small class="d-block text-muted">Qty: <%= quantity %></small>
+              </div>
+              <span>$<%= sprintf('%.2f', line_total) %></span>
+            </div>
+          <% end %>
+        </div>
+        
+        <hr>
+        
+        <div class="d-flex justify-content-between mb-2">
+          <span>Subtotal:</span>
+          <span>$<%= sprintf('%.2f', subtotal) %></span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Taxes:</span>
+          <span class="text-muted"><%= estimated_tax %></span>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Shipping:</span>
+          <span>$<%= sprintf('%.2f', shipping) %></span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between mb-3">
+          <span class="fw-bold">Estimated Total:</span>
+          <span class="fw-bold fs-5">$<%= sprintf('%.2f', subtotal + shipping) %>+</span>
+        </div>
+        
+        <div class="alert alert-warning d-flex align-items-center">
+          <i class="fas fa-info-circle me-2"></i>
+          <small>Final total including taxes will be calculated after selecting your province.</small>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment Methods -->
+    <div class="card">
+      <div class="card-header bg-light">
+        <h5 class="mb-0"><i class="fas fa-credit-card me-2"></i>Payment Methods</h5>
+      </div>
+      <div class="card-body text-center">
+        <p class="mb-3">We accept the following payment methods:</p>
+        <div class="payment-icons mb-3">
+          <i class="fab fa-cc-visa fa-2x me-2"></i>
+          <i class="fab fa-cc-mastercard fa-2x me-2"></i>
+          <i class="fab fa-cc-amex fa-2x me-2"></i>
+          <i class="fab fa-cc-paypal fa-2x"></i>
+        </div>
+        <small class="text-muted">Payment will be processed securely in the next step.</small>
+      </div>
+    </div>
+  </div>
+</div>
