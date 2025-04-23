@@ -31,9 +31,19 @@ class CheckoutController < ApplicationController
     # Get all provinces for the dropdown
     @provinces = Province.all.order(:name)
     
+    # Prepare cart items for the view
+    @cart_items = []
+    (session[:cart] || {}).each do |product_id, quantity|
+      product = Product.find_by(id: product_id)
+      if product
+        @cart_items << { product: product, quantity: quantity }
+      end
+    end
+    
     # Debug output
     Rails.logger.debug "Final customer object: #{@customer.inspect}"
     Rails.logger.debug "Province ID: #{@customer.province_id.inspect}"
+    Rails.logger.debug "Cart items: #{@cart_items.inspect}"
     
     # Add a flash message to show we're not using cached data
     flash.now[:notice] = "Page refreshed at #{Time.now.strftime('%H:%M:%S')}"
@@ -43,8 +53,18 @@ class CheckoutController < ApplicationController
     # Just load the provinces for the dropdown
     @provinces = Province.all.order(:name)
     
+    # Prepare cart items for the view
+    @cart_items = []
+    (session[:cart] || {}).each do |product_id, quantity|
+      product = Product.find_by(id: product_id)
+      if product
+        @cart_items << { product: product, quantity: quantity }
+      end
+    end
+    
     # Log that we're using the simple page
     Rails.logger.debug "Using simple checkout page"
+    Rails.logger.debug "Cart items: #{@cart_items.inspect}"
   end
 
   def confirm
@@ -218,6 +238,13 @@ class CheckoutController < ApplicationController
         # Update the existing order
         order = Order.find_by(id: session[:pending_order_id])
         if order
+          # Check if the order has been cancelled
+          if order.status == "cancelled"
+            flash[:alert] = "This order has been cancelled and cannot be paid."
+            redirect_to checkout_path
+            return
+          end
+          
           order.update(
             payment_id: payment_intent.id,
             status: "paid"

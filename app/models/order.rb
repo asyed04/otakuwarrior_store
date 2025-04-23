@@ -29,6 +29,10 @@ class Order < ApplicationRecord
     payment_id.blank?
   end
   
+  def can_cancel?
+    status != "cancelled" && status != "delivered"
+  end
+  
   def formatted_total
     "$#{sprintf('%.2f', total)}"
   end
