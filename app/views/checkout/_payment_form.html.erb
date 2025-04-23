@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    <h5>Payment Information</h5>
+  </div>
+  <div class="card-body">
+    <p>You will be redirected to Stripe to complete your payment.</p>
+    <%= form_with url: checkout_payment_path, method: :post do %>
+      <%= hidden_field_tag :amount, (@total * 100).to_i %>
+      <%= hidden_field_tag :customer_id, @customer.id %>
+      <%= submit_tag "Pay $#{@total.round(2)} with Stripe", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

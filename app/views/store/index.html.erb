@@ -1,63 +1,52 @@
-<h2>Categories</h2>
-<ul>
-  <% @categories.each do |category| %>
-    <li>
-      <%= link_to category.name, store_category_path(category) %>
-    </li>
-  <% end %>
-</ul>
-
-<p>
-  <%= link_to "New Products", store_new_products_path %> |
-  <%= link_to "On Sale", store_on_sale_path %> |
-  <%= link_to "All", store_path %>
-</p>
-
-<%= form_with url: store_search_path, method: :get, local: true do %>
-  <div class="form-group">
-    <%= label_tag :query, "Search Products" %>
-    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Enter keyword..." %>
-  </div>
-
-  <div class="form-group">
-    <%= label_tag :category_id, "Filter by Category" %>
-    <%= select_tag :category_id, options_from_collection_for_select(@categories, :id, :name, params[:category_id]), include_blank: "All Categories", class: "form-control" %>
-  </div>
-
-  <%= submit_tag "Search", class: "btn btn-primary mt-2" %>
-<% end %>
-
-<h1>All Products</h1>
+<%= render 'shared/hero_banner' %>
 
 <div class="row">
-  <% @products.each do |product| %>
-    <div class="col-md-4 mb-4">
-      <div class="card">
-        <% if product.image.attached? %>
-          <%= image_tag rails_blob_url(product.image, host: "http://localhost:3000"), class: "card-img-top" %>
-        <% else %>
-          <p class="text-center mt-3">No Image</p>
-        <% end %>
+  <!-- Mobile Filter Toggle Button (visible only on small screens) -->
+  <div class="col-12 d-lg-none mb-3">
+    <button class="btn btn-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSidebar" aria-expanded="false" aria-controls="mobileSidebar">
+      <i class="fas fa-filter me-2"></i> Filter & Categories
+    </button>
+  </div>
 
-        <div class="card-body">
-          <h5 class="card-title"><%= product.name %></h5>
-          <p><%= truncate(product.description, length: 100) %></p>
-          <% if product.on_sale && product.sale_price.present? %>
-            <p>
-              <strong>Sale Price:</strong> $<%= product.sale_price %><br>
-              <small><del>$<%= product.price %></del></small>
-            </p>
-          <% else %>
-            <p><strong>Price:</strong> $<%= product.price %></p>
-          <% end %>
-          <%= link_to "View Details", store_product_path(product), class: "btn btn-primary" %>
-        </div>
-      </div>
+  <!-- Sidebar with Categories and Search (collapsible on mobile) -->
+  <div class="col-lg-3 mb-4">
+    <div class="sidebar-container collapse d-lg-block" id="mobileSidebar">
+      <!-- Search Form -->
+      <%= render 'shared/search_form', categories: @categories %>
+
+      <!-- Categories -->
+      <%= render 'shared/category_list', categories: @categories %>
     </div>
-  <% end %>
+  </div>
+
+  <!-- Main Content with Products -->
+  <div class="col-lg-9">
+    <!-- Page Title with Filter Options -->
+    <%= render 'shared/filter_options', title: @page_title %>
+
+    <!-- Products Grid -->
+    <div class="row">
+      <% if @products.any? %>
+        <% @products.each do |product| %>
+          <div class="col-6 col-md-6 col-lg-4 mb-4">
+            <%= render 'shared/product_card', product: product %>
+          </div>
+        <% end %>
+      <% else %>
+        <div class="col-12">
+          <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i> No products found. Try adjusting your search criteria.
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-center mt-4">
+      <%= paginate @products %>
+    </div>
+  </div>
 </div>
 
-<!-- ✅ Pagination placed after the products grid -->
-<div class="d-flex justify-content-center mt-4">
-  <%= paginate @products %>
-</div>
+<!-- Featured Categories Section -->
+<%= render 'shared/featured_categories', categories: @categories %>

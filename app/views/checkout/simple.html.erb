@@ -1,0 +1,17 @@
+<h1>Simple Checkout</h1>
+
+<p>This is a simplified checkout page to test functionality.</p>
+
+<%= form_with url: checkout_confirm_path, method: :post, local: true do |f| %>
+  <div class="mb-3">
+    <label for="province_id" class="form-label">Province</label>
+    <select name="customer[province_id]" id="province_id" class="form-select">
+      <option value="">Select a province</option>
+      <% @provinces.each do |province| %>
+        <option value="<%= province.id %>"><%= province.name %></option>
+      <% end %>
+    </select>
+  </div>
+  
+  <%= f.submit "Continue", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,87 @@
+<%= render 'shared/breadcrumbs', items: [{ text: 'Shopping Cart' }] %>
+
+<div class="row">
+  <div class="col-12">
+    <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between mb-4">
+      <h1 class="mb-3 mb-sm-0"><i class="fas fa-shopping-cart me-2"></i>Your Shopping Cart</h1>
+      <%= link_to store_path, class: "btn btn-outline-primary align-self-start" do %>
+        <i class="fas fa-arrow-left me-1"></i> Continue Shopping
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<% if @cart_items.any? %>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="card cart-table mb-4">
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover mb-0">
+              <thead>
+                <tr>
+                  <th style="width: 50%">Product</th>
+                  <th style="width: 15%">Price</th>
+                  <th style="width: 15%">Quantity</th>
+                  <th style="width: 15%">Total</th>
+                  <th style="width: 5%"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @cart_items.each do |item| %>
+                  <%= render 'shared/cart_item', item: item %>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4">
+      <%= render 'shared/order_summary', cart_items: @cart_items %>
+      
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-truck me-2"></i>Shipping Information</h5>
+          <p class="card-text">Free shipping on orders over $50!</p>
+          <p class="card-text">Estimated delivery: 3-5 business days</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <div class="card text-center py-5">
+    <div class="card-body">
+      <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+      <h3>Your cart is empty</h3>
+      <p class="text-muted mb-4">Looks like you haven't added any items to your cart yet.</p>
+      <%= link_to store_path, class: "btn btn-primary" do %>
+        <i class="fas fa-store me-1"></i> Start Shopping
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<!-- You May Also Like Section -->
+<section class="mt-5">
+  <h3 class="mb-4">You May Also Like</h3>
+  <div class="row">
+    <% 4.times do |i| %>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card h-100">
+          <div class="text-center py-4 bg-light">
+            <i class="fas fa-gift fa-3x text-primary"></i>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Recommended Item</h5>
+            <p class="card-text">Discover more products based on your interests.</p>
+            <div class="d-grid">
+              <%= link_to "View More", store_path, class: "btn btn-outline-primary" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

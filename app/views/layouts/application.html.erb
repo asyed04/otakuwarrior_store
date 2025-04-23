@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>OtakuwarriorStore</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>OtakuWarrior Store - Anime & Manga Merchandise</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Shop the best anime and manga merchandise at OtakuWarrior Store. Find figurines, apparel, accessories and more from your favorite series.">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <!-- ✅ Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "responsive", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+<body>
+  <!-- Navbar -->
+  <%= render 'shared/navbar' %>
 
-  <body>
-    <%= yield %>
+  <!-- Main Content -->
+  <main class="py-4">
+    <div class="container">
+      <%= render 'shared/flash_messages' %>
+      
+      <%= yield %>
+    </div>
+  </main>
 
-    <!-- ✅ Bootstrap JS (for dropdowns, modals, etc.) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Footer -->
+  <%= render 'shared/footer' %>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Include Stripe JS if we're on a checkout page -->
+  <% if controller_name == 'checkout' || controller_name == 'stripe_test' %>
+    <%= render 'layouts/stripe_js' %>
+  <% end %>
+</body>
 </html>

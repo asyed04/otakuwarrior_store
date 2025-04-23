@@ -34,12 +34,13 @@ Rails.application.routes.draw do
   get "profile/orders", to: "profile#orders", as: "profile_orders"
   get "profile/orders/:id", to: "profile#order", as: "profile_order"
   post "profile/orders/:id/pay", to: "profile#pay_order", as: "pay_profile_order"
+  post "profile/orders/:id/cancel", to: "profile#cancel_order", as: "cancel_profile_order"
 
   # Homepage
   root to: "store#index"
 
-  # Contact & About Page routes
-  get '/:slug', to: 'pages#show', constraints: { slug: /about|contact/ }, as: :static_page
+  # Static Page routes
+  get '/pages/:slug', to: 'pages#show', as: :static_page
   
   #stripe routes
   post "checkout/payment", to: "checkout#payment"

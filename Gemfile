@@ -75,5 +75,11 @@ gem 'sassc'
 
 gem 'kaminari'
 
+gem 'stripe'
+
+# For fetching high-quality images from Unsplash
+gem 'unsplash'
+
+
 
 

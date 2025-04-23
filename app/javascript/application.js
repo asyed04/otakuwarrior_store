@@ -1,4 +1,18 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+// Import Turbo
 import "@hotwired/turbo-rails"
+
+// Import Rails UJS for handling CSRF tokens and other Rails-specific JS
+import * as Rails from "@rails/ujs"
+
+// Import controllers
 import "controllers"
-import "bootstrap"
+
+// Import custom scripts
+import "./custom/slideshow"
+import "./custom/flash_messages"
+
+// Start Rails UJS
+document.addEventListener("DOMContentLoaded", function() {
+  Rails.start();
+  console.log("Rails UJS started");
+});
