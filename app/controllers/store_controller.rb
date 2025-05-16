@@ -4,7 +4,7 @@ class StoreController < ApplicationController
   def index
     @categories = Category.all
     @products = Product.includes(:category, image_attachment: :blob).page(params[:page]).per(6)
-    @page_title = "All Products"
+    @page_title = 'All Products'
   end
 
   def category
@@ -22,14 +22,14 @@ class StoreController < ApplicationController
   def new_products
     @categories = Category.all
     @products = Product.new_products.includes(:category, image_attachment: :blob).page(params[:page]).per(6)
-    @page_title = "New Products"
+    @page_title = 'New Products'
     render :index
   end
 
   def on_sale
     @categories = Category.all
     @products = Product.on_sale.includes(:category, image_attachment: :blob).page(params[:page]).per(6)
-    @page_title = "On Sale Products"
+    @page_title = 'On Sale Products'
     render :index
   end
 
@@ -39,15 +39,15 @@ class StoreController < ApplicationController
 
     if params[:query].present?
       query = "%#{params[:query].downcase}%"
-      @products = @products.where("LOWER(name) LIKE ? OR LOWER(description) LIKE ?", query, query)
+      @products = @products.where('LOWER(name) LIKE ? OR LOWER(description) LIKE ?', query, query)
     end
 
-    if params[:category_id].present? && params[:category_id] != ""
+    if params[:category_id].present? && params[:category_id] != ''
       @products = @products.where(category_id: params[:category_id])
     end
 
     @products = @products.page(params[:page]).per(6)
-    @page_title = "Search Results"
+    @page_title = 'Search Results'
     render :index
   end
 end

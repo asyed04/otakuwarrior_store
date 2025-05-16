@@ -1,0 +1,69 @@
+/* OtakuWarrior Store Custom Styles */
+
+/* ... existing styles ... */
+
+/* Quantity input container */
+.quantity-input-container {
+  gap: 0.5rem;
+}
+
+/* Quantity input wrapper */
+.quantity-input-wrapper {
+  border: 2px solid #6a4c93;
+  border-radius: 4px;
+  background: white;
+  overflow: hidden;
+  width: 70px;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Quantity input field */
+.cart-quantity-input {
+  border: none !important;
+  width: 40px !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  color: black !important;
+  background: white !important;
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance: textfield !important;
+  font-size: 16px !important;
+  height: auto !important;
+  padding: 4px 0 !important;
+}
+
+/* Quantity buttons container */
+.quantity-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4px;
+}
+
+/* Quantity buttons */
+.quantity-btn {
+  border: none;
+  background: #f0f0f0;
+  padding: 2px 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a4c93;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 24px;
+  height: 18px;
+  border-radius: 2px;
+}
+
+.quantity-btn:hover {
+  background-color: #6a4c93;
+  color: white;
+}
+
+.quantity-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(106, 76, 147, 0.5);
+}

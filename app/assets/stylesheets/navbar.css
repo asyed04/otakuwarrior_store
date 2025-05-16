@@ -1,0 +1,144 @@
+/* Navbar Styles */
+
+/* Main navbar container */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px); /* Creates a frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+/* Navbar brand (logo) */
+.navbar-brand {
+  font-weight: 700;
+  color: #6a4c93 !important; /* Primary brand color */
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand i {
+  color: #6a4c93;
+  transform: translateY(1px); /* Slight alignment adjustment */
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar .nav-link:hover {
+  color: #6a4c93 !important;
+  transform: translateY(-1px);
+}
+
+/* Active link */
+.navbar .nav-link.active {
+  color: #6a4c93 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: #6a4c93;
+  border-radius: 3px;
+}
+
+/* Dropdown menu */
+.navbar .dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  margin-top: 10px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar .dropdown-item {
+  padding: 0.5rem 1.5rem;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #f8f4ff;
+  color: #6a4c93;
+  transform: translateX(5px);
+}
+
+/* Cart badge */
+.navbar .badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar toggler (mobile) */
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.05);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Scrolled state - added with JavaScript */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Add a subtle gradient background for more visual interest */
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(106, 76, 147, 0.05), rgba(106, 76, 147, 0.02));
+  z-index: -1;
+}
+
+/* Add a subtle top border with brand color */
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #6a4c93, #9a7fcc);
+  z-index: 1;
+}

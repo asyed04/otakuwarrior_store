@@ -1,0 +1,54 @@
+<div class="card h-100">
+  <% if product.on_sale && product.sale_price.present? %>
+    <div class="position-absolute top-0 start-0 bg-danger text-white py-1 px-2 m-2 rounded">
+      <i class="fas fa-tags me-1"></i> <span class="d-none d-sm-inline">SALE</span>
+    </div>
+  <% end %>
+  
+  <% if product.image.attached? %>
+    <%= link_to store_product_path(product) do %>
+      <% timestamp = Time.now.to_i %>
+      <% random = rand(10000) %>
+      <%= image_tag url_for(product.image) + "?v=#{timestamp}_#{random}", class: "card-img-top", style: "height: 160px; height: clamp(160px, 30vw, 200px); object-fit: cover;" %>
+    <% end %>
+  <% else %>
+    <div class="text-center py-5 bg-light">
+      <i class="fas fa-image fa-3x text-muted"></i>
+      <p class="mt-2 text-muted">No Image Available</p>
+    </div>
+  <% end %>
+
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title" style="font-size: clamp(1rem, 4vw, 1.25rem);">
+      <%= link_to product.name, store_product_path(product), class: "text-decoration-none" %>
+    </h5>
+    <p class="card-text flex-grow-1 d-none d-md-block"><%= truncate(product.description, length: 80) %></p>
+    <p class="card-text flex-grow-1 d-block d-md-none"><%= truncate(product.description, length: 40) %></p>
+    
+    <div class="mt-auto">
+      <% if product.on_sale && product.sale_price.present? %>
+        <div class="d-flex flex-wrap align-items-center mb-3">
+          <span class="sale-price me-2">$<%= sprintf('%.2f', product.sale_price) %></span>
+          <span class="original-price">$<%= sprintf('%.2f', product.price) %></span>
+          <% discount = ((product.price - product.sale_price) / product.price * 100).round %>
+          <span class="ms-auto badge bg-danger">-<%= discount %>%</span>
+        </div>
+      <% else %>
+        <p class="price mb-3">$<%= sprintf('%.2f', product.price) %></p>
+      <% end %>
+      
+      <div class="d-grid gap-2">
+        <%= link_to store_product_path(product), class: "btn btn-outline-primary btn-sm btn-md-lg" do %>
+          <i class="fas fa-eye me-1"></i> <span class="d-none d-sm-inline">View Details</span><span class="d-inline d-sm-none">View</span>
+        <% end %>
+        
+        <%= form_with url: add_to_cart_path(product), method: :post, data: { turbo: false } do %>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+          <button type="submit" class="btn btn-success btn-sm btn-md-lg w-100">
+            <i class="fas fa-cart-plus me-1"></i> <span class="d-none d-sm-inline">Add to Cart</span><span class="d-inline d-sm-none">Add</span>
+          </button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

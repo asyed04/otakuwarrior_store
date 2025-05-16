@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :customers
   get 'pages/show'
-  devise_for :admins
+  devise_for :admin_users
   ActiveAdmin.routes(self)
 
   # Storefront routes

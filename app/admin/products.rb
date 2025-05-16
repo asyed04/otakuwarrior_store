@@ -2,18 +2,18 @@ ActiveAdmin.register Product do
   include Rails.application.routes.url_helpers
 
   permit_params :name, :description, :price, :stock_quantity, :category_id, :image, :sale_price, :on_sale
-  
+
   index do
     selectable_column
     column :name
     column :price
     column :stock_quantity
     column :category
-    column "Image" do |product|
+    column 'Image' do |product|
       if product.image.attached?
-        image_tag url_for(product.image), size: "80x80"
+        image_tag url_for(product.image), size: '80x80'
       else
-        "No Image"
+        'No Image'
       end
     end
     actions
@@ -44,9 +44,9 @@ ActiveAdmin.register Product do
       row :category
       row :image do |product|
         if product.image.attached?
-          image_tag url_for(product.image), size: "200x200"
+          image_tag url_for(product.image), size: '200x200'
         else
-          "No Image Uploaded"
+          'No Image Uploaded'
         end
       end
     end

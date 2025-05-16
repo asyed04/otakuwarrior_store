@@ -1,0 +1,9 @@
+<!-- Stripe JS -->
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+  // Make Stripe publishable key available to your JavaScript
+  window.stripePublishableKey = '<%= Rails.application.credentials.dig(:stripe, :publishable_key) %>';
+  
+  // Initialize Stripe
+  const stripe = Stripe(window.stripePublishableKey);
+</script>

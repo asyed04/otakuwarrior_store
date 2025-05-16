@@ -1,0 +1,18 @@
+<section class="mt-5 pt-3">
+  <h2 class="text-center mb-4">Shop by Category</h2>
+  <div class="row">
+    <% categories.first(4).each do |category| %>
+      <div class="col-md-3 mb-4">
+        <%= link_to store_category_path(category), class: "text-decoration-none" do %>
+          <div class="card category-card text-center">
+            <div class="card-body py-4">
+              <i class="fas fa-bookmark fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title"><%= category.name %></h5>
+              <p class="card-text text-muted">Explore <%= category.name.downcase %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>

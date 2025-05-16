@@ -1,0 +1,80 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  NewCops: disable  # Disable new cops to avoid introducing new offenses
+  TargetRubyVersion: 3.4
+  SuggestExtensions: false
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'utility_scripts_backup/**/*'
+
+# Layout
+Layout/LineLength:
+  Max: 120
+  Enabled: true
+
+Layout/EndOfLine:
+  Enabled: false  # Temporarily disable line ending checks
+
+# Style
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# Metrics - Disable most metrics checks initially
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Lint
+Lint/DuplicateBranch:
+  Enabled: false
+
+# Rails
+Rails:
+  Enabled: true
+
+# Only enable a minimal set of cops initially
+Lint/Syntax:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
+# Load Rails specific cops but disable most of them initially
+require: 
+  - rubocop-rails
+  - rubocop-capybara
+
+Rails/FilePath:
+  Enabled: false

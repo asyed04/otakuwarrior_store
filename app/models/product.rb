@@ -1,9 +1,9 @@
 class Product < ApplicationRecord
-  def self.ransackable_attributes(auth_object = nil)
+  def self.ransackable_attributes(_auth_object = nil)
     %w[category created_at description id name price stock_quantity updated_at]
-  end      
+  end
 
-  def self.ransackable_associations(auth_object = nil)
+  def self.ransackable_associations(_auth_object = nil)
     %w[image_attachment image_blob category]
   end
 
@@ -20,10 +20,12 @@ class Product < ApplicationRecord
   # 🔽 Scopes for filtering
   scope :on_sale, -> { where(on_sale: true) }
   scope :new_products, -> { where('created_at >= ?', 3.days.ago) }
-  
+
   private
-  
+
   def image_presence
-    errors.add(:image, "must be attached") unless image.attached?
+    # Skip image validation in production
+    return if Rails.env.production?
+    errors.add(:image, 'must be attached') unless image.attached?
   end
 end

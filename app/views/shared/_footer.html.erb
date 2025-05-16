@@ -1,0 +1,56 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <h5><i class="fas fa-dragon me-2"></i>OtakuWarrior</h5>
+        <p>Your ultimate destination for premium anime and manga merchandise. From collectible figurines to stylish apparel, we've got everything an otaku could desire.</p>
+        <div class="social-icons d-flex justify-content-start justify-content-md-center justify-content-lg-start">
+          <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mb-4 mb-md-0">
+        <h5>Shop</h5>
+        <ul class="footer-links">
+          <li><%= link_to "New Arrivals", store_new_products_path %></li>
+          <li><%= link_to "Best Sellers", store_path %></li>
+          <li><%= link_to "On Sale", store_on_sale_path %></li>
+          <li><%= link_to "All Products", store_path %></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2 mb-4 mb-md-0">
+        <h5>Information</h5>
+        <ul class="footer-links">
+          <li><%= link_to "About Us", static_page_path(slug: "about") %></li>
+          <li><%= link_to "Contact Us", static_page_path(slug: "contact") %></li>
+          <li><%= link_to "Privacy Policy", static_page_path(slug: "privacy") %></li>
+          <li><%= link_to "Terms of Service", static_page_path(slug: "terms") %></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <h5>Newsletter</h5>
+        <p>Subscribe to receive updates on new arrivals and special offers.</p>
+        <form class="mb-3">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email address">
+            <button class="btn btn-light" type="button">Subscribe</button>
+          </div>
+        </form>
+        <p><small>We accept all major credit cards and PayPal</small></p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa me-2"></i>
+          <i class="fab fa-cc-mastercard me-2"></i>
+          <i class="fab fa-cc-amex me-2"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mt-4">
+    <div class="container">
+      <p class="mb-0 text-center text-md-start">&copy; <%= Date.today.year %> OtakuWarrior Store. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

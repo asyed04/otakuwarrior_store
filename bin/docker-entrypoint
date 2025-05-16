@@ -2,7 +2,18 @@
 
 # If running the rails server then create or migrate existing database
 if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
+  # Make sure the storage directory exists
+  mkdir -p /rails/storage
+  
+  # Prepare the database
   ./bin/rails db:prepare
+  
+  # Seed the database if it's a fresh install
+  if [ ! -f /rails/storage/.seeded ]; then
+    echo "Seeding the database..."
+    ./bin/rails db:seed
+    touch /rails/storage/.seeded
+  fi
 fi
 
 exec "${@}"

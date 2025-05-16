@@ -1,0 +1,97 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container">
+    <%= link_to store_path, class: "navbar-brand" do %>
+      <i class="fas fa-dragon me-2"></i><span class="d-none d-sm-inline">OtakuWarrior</span><span class="d-inline d-sm-none">OW</span>
+    <% end %>
+
+    <div class="d-flex align-items-center order-lg-2">
+      <%= link_to cart_path, class: "nav-link position-relative me-3 d-block d-lg-none" do %>
+        <i class="fas fa-shopping-cart"></i>
+        <% if (session[:cart] || {}).values.sum > 0 %>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            <%= (session[:cart] || {}).values.sum %>
+          </span>
+        <% end %>
+      <% end %>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <%= link_to store_path, class: "nav-link #{current_page?(store_path) ? 'active' : ''}" do %>
+            <i class="fas fa-store me-1"></i> Shop
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to store_new_products_path, class: "nav-link #{current_page?(store_new_products_path) ? 'active' : ''}" do %>
+            <i class="fas fa-fire me-1"></i> New Arrivals
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to store_on_sale_path, class: "nav-link #{current_page?(store_on_sale_path) ? 'active' : ''}" do %>
+            <i class="fas fa-tags me-1"></i> On Sale
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to static_page_path("about"), class: "nav-link #{current_page?(static_page_path('about')) ? 'active' : ''}" do %>
+            <i class="fas fa-info-circle me-1"></i> About
+          <% end %>
+        </li>
+        <li class="nav-item">
+          <%= link_to static_page_path("contact"), class: "nav-link #{current_page?(static_page_path('contact')) ? 'active' : ''}" do %>
+            <i class="fas fa-envelope me-1"></i> Contact
+          <% end %>
+        </li>
+      </ul>
+      
+      <ul class="navbar-nav">
+        <li class="nav-item d-none d-lg-block">
+          <%= link_to cart_path, class: "nav-link position-relative #{current_page?(cart_path) ? 'active' : ''}" do %>
+            <i class="fas fa-shopping-cart me-1"></i> Cart
+            <% if (session[:cart] || {}).values.sum > 0 %>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <%= (session[:cart] || {}).values.sum %>
+              </span>
+            <% end %>
+          <% end %>
+        </li>
+        <% if customer_signed_in? %>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user-circle me-1"></i> <span class="d-none d-lg-inline"><%= current_customer.name %></span><span class="d-inline d-lg-none">Account</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><%= link_to profile_path, class: "dropdown-item" do %>
+                <i class="fas fa-user me-2"></i> My Profile
+              <% end %></li>
+              <li><%= link_to profile_orders_path, class: "dropdown-item" do %>
+                <i class="fas fa-box me-2"></i> My Orders
+              <% end %></li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <%= button_to destroy_customer_session_path, method: :delete, class: "dropdown-item" do %>
+                  <i class="fas fa-sign-out-alt me-2"></i> Logout
+                <% end %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to new_customer_session_path, class: "nav-link #{current_page?(new_customer_session_path) ? 'active' : ''}" do %>
+              <i class="fas fa-sign-in-alt me-1"></i> Login
+            <% end %>
+          </li>
+          <li class="nav-item">
+            <%= link_to new_customer_registration_path, class: "nav-link #{current_page?(new_customer_registration_path) ? 'active' : ''}" do %>
+              <i class="fas fa-user-plus me-1"></i> Register
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

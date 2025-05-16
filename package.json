@@ -1,0 +1,31 @@
+{
+  "name": "otakuwarrior_store",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asyed04/otakuwarrior_store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asyed04/otakuwarrior_store/issues"
+  },
+  "homepage": "https://github.com/asyed04/otakuwarrior_store#readme",
+  "devDependencies": {
+    "cypress": "^14.3.2"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.16.0"
+  }
+}

@@ -1,0 +1,99 @@
+<div class="hero-banner mb-5 rounded overflow-hidden">
+  <div class="hero-slideshow">
+    <!-- Slide 1 -->
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');"></div>
+    
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');"></div>
+    
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');"></div>
+    
+    <!-- Content overlay (stays fixed while images change) -->
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold mb-3">Welcome to OtakuWarrior</h1>
+      <p class="lead mb-4">Discover premium anime and manga merchandise from your favorite series. From collectible figurines to stylish apparel, we've got everything an otaku could desire.</p>
+      <% if customer_signed_in? %>
+        <p class="mb-4">Welcome back, <%= current_customer.name %>! Check out our latest arrivals.</p>
+      <% end %>
+      <div class="d-flex gap-3 flex-wrap mt-4">
+        <%= link_to store_new_products_path, class: "btn btn-light btn-lg" do %>
+          <i class="fas fa-fire me-1"></i> New Arrivals
+        <% end %>
+        <%= link_to store_on_sale_path, class: "btn btn-outline-light btn-lg" do %>
+          <i class="fas fa-tags me-1"></i> On Sale
+        <% end %>
+      </div>
+      
+      <!-- Slideshow navigation dots -->
+      <div class="slideshow-dots mt-4">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline script for slideshow as a fallback -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("Hero banner inline script running");
+    
+    // Manual slideshow control
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) {
+      console.log("No slides found in inline script");
+      return;
+    }
+    
+    console.log(`Found ${slides.length} slides and ${dots.length} dots in inline script`);
+    
+    // Ensure first slide is active
+    if (!document.querySelector('.hero-slide.active')) {
+      slides[0].classList.add('active');
+      if (dots.length > 0) {
+        dots[0].classList.add('active');
+      }
+      console.log("Set first slide as active in inline script");
+    }
+    
+    let currentSlide = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+    if (currentSlide === -1) currentSlide = 0;
+    
+    let slideInterval = setInterval(nextSlide, 5000);
+    
+    // Set up click handlers for dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        goToSlide(index);
+        resetInterval();
+      });
+    });
+    
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % slides.length);
+    }
+    
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      if (dots.length > currentSlide) {
+        dots[currentSlide].classList.remove('active');
+      }
+      
+      currentSlide = n;
+      
+      slides[currentSlide].classList.add('active');
+      if (dots.length > currentSlide) {
+        dots[currentSlide].classList.add('active');
+      }
+    }
+    
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+  });
+</script>

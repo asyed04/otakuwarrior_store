@@ -1,0 +1,59 @@
+<h1>Stripe Configuration Test</h1>
+
+<div class="card">
+  <div class="card-header">
+    <h5>Stripe API Key Status</h5>
+  </div>
+  <div class="card-body">
+    <% if Rails.application.credentials.dig(:stripe, :secret_key).present? %>
+      <div class="alert alert-success">
+        <p><strong>Success!</strong> Stripe secret key is configured in your credentials.</p>
+      </div>
+    <% else %>
+      <div class="alert alert-danger">
+        <p><strong>Error!</strong> Stripe secret key is missing from your credentials.</p>
+        <p>Please add it to your credentials file using:</p>
+        <pre>rails credentials:edit</pre>
+        <p>And add the following structure:</p>
+        <pre>
+stripe:
+  secret_key: sk_test_your_test_key
+  publishable_key: pk_test_your_publishable_key
+        </pre>
+      </div>
+    <% end %>
+    
+    <% if Rails.application.credentials.dig(:stripe, :publishable_key).present? %>
+      <div class="alert alert-success">
+        <p><strong>Success!</strong> Stripe publishable key is configured in your credentials.</p>
+      </div>
+    <% else %>
+      <div class="alert alert-warning">
+        <p><strong>Warning!</strong> Stripe publishable key is missing from your credentials.</p>
+        <p>This key is needed for the frontend Stripe integration.</p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="card mt-4">
+  <div class="card-header">
+    <h5>Stripe Initializer Status</h5>
+  </div>
+  <div class="card-body">
+    <% if Stripe.api_key.present? %>
+      <div class="alert alert-success">
+        <p><strong>Success!</strong> Stripe.api_key is set correctly in the application.</p>
+      </div>
+    <% else %>
+      <div class="alert alert-danger">
+        <p><strong>Error!</strong> Stripe.api_key is not set in the application.</p>
+        <p>Check your config/initializers/stripe.rb file.</p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="mt-4">
+  <a href="<%= root_path %>" class="btn btn-primary">Back to Home</a>
+</div>

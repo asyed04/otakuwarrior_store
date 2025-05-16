@@ -1,0 +1,12 @@
+/* Flash Messages Styling */
+
+/* Transition for fade-out effect */
+.alert {
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Fade-out animation for alerts */
+.alert.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
