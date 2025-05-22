@@ -30,6 +30,6 @@ test:
 production:
   <<: *default
   database: otakuwarrior_store_production
-  username: syeda7
-  password: syedanvaar7
-  host: localhost
+  username: <%= ENV["PG_USERNAME"] %>
+  password: <%= ENV["PG_PASSWORD"] %>
+  host: <%= ENV["PG_HOST"] %>
