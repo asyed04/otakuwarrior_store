@@ -1,0 +1,2066 @@
+psql:storage/all_postgres.sql:1: ERROR:  relation "active_admin_comments" already exists
+psql:storage/all_postgres.sql:2: ERROR:  relation "active_storage_blobs" already exists
+psql:storage/all_postgres.sql:3: ERROR:  relation "admin_users" already exists
+psql:storage/all_postgres.sql:4: ERROR:  duplicate key value violates unique constraint "admin_users_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:5: ERROR:  relation "categories" already exists
+psql:storage/all_postgres.sql:6: ERROR:  duplicate key value violates unique constraint "categories_pkey"
+DETAIL:  Key (id)=(1) already exists.
+psql:storage/all_postgres.sql:10: ERROR:  relation "active_storage_attachments" already exists
+psql:storage/all_postgres.sql:14: ERROR:  relation "active_storage_variant_records" already exists
+psql:storage/all_postgres.sql:18: ERROR:  relation "products" already exists
+psql:storage/all_postgres.sql:19: ERROR:  relation "schema_migrations" already exists
+psql:storage/all_postgres.sql:20: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250408233952) already exists.
+psql:storage/all_postgres.sql:21: ERROR:  relation "ar_internal_metadata" already exists
+psql:storage/all_postgres.sql:22: ERROR:  duplicate key value violates unique constraint "ar_internal_metadata_pkey"
+DETAIL:  Key (key)=(environment) already exists.
+CREATE TABLE
+psql:storage/all_postgres.sql:27: ERROR:  relation "pages" already exists
+psql:storage/all_postgres.sql:28: ERROR:  duplicate key value violates unique constraint "pages_pkey"
+DETAIL:  Key (id)=(1) already exists.
+psql:storage/all_postgres.sql:29: ERROR:  relation "provinces" already exists
+psql:storage/all_postgres.sql:30: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(1) already exists.
+psql:storage/all_postgres.sql:34: ERROR:  relation "customers" already exists
+psql:storage/all_postgres.sql:36: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(5) already exists.
+psql:storage/all_postgres.sql:37: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(7) already exists.
+psql:storage/all_postgres.sql:38: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(8) already exists.
+psql:storage/all_postgres.sql:39: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(20) already exists.
+psql:storage/all_postgres.sql:40: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(22) already exists.
+psql:storage/all_postgres.sql:41: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(23) already exists.
+psql:storage/all_postgres.sql:42: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(35) already exists.
+psql:storage/all_postgres.sql:43: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(37) already exists.
+psql:storage/all_postgres.sql:44: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(38) already exists.
+psql:storage/all_postgres.sql:45: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(50) already exists.
+psql:storage/all_postgres.sql:46: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(52) already exists.
+psql:storage/all_postgres.sql:47: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(53) already exists.
+psql:storage/all_postgres.sql:48: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(65) already exists.
+psql:storage/all_postgres.sql:49: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(67) already exists.
+psql:storage/all_postgres.sql:50: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(68) already exists.
+psql:storage/all_postgres.sql:51: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(80) already exists.
+psql:storage/all_postgres.sql:52: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(82) already exists.
+psql:storage/all_postgres.sql:53: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(83) already exists.
+psql:storage/all_postgres.sql:54: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(95) already exists.
+psql:storage/all_postgres.sql:55: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(97) already exists.
+psql:storage/all_postgres.sql:56: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(98) already exists.
+psql:storage/all_postgres.sql:57: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(110) already exists.
+psql:storage/all_postgres.sql:58: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(112) already exists.
+psql:storage/all_postgres.sql:59: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(113) already exists.
+psql:storage/all_postgres.sql:60: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(125) already exists.
+psql:storage/all_postgres.sql:61: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(127) already exists.
+psql:storage/all_postgres.sql:62: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(128) already exists.
+psql:storage/all_postgres.sql:63: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(140) already exists.
+psql:storage/all_postgres.sql:64: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(142) already exists.
+psql:storage/all_postgres.sql:65: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(143) already exists.
+psql:storage/all_postgres.sql:66: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(155) already exists.
+psql:storage/all_postgres.sql:67: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(157) already exists.
+psql:storage/all_postgres.sql:68: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(158) already exists.
+psql:storage/all_postgres.sql:69: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(170) already exists.
+psql:storage/all_postgres.sql:70: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(172) already exists.
+psql:storage/all_postgres.sql:71: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(173) already exists.
+psql:storage/all_postgres.sql:72: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(185) already exists.
+psql:storage/all_postgres.sql:73: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(187) already exists.
+psql:storage/all_postgres.sql:74: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(188) already exists.
+psql:storage/all_postgres.sql:75: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(200) already exists.
+psql:storage/all_postgres.sql:76: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(201) already exists.
+psql:storage/all_postgres.sql:77: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(213) already exists.
+psql:storage/all_postgres.sql:78: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(215) already exists.
+psql:storage/all_postgres.sql:79: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(216) already exists.
+psql:storage/all_postgres.sql:80: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(228) already exists.
+psql:storage/all_postgres.sql:81: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(230) already exists.
+psql:storage/all_postgres.sql:82: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(231) already exists.
+psql:storage/all_postgres.sql:83: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(243) already exists.
+psql:storage/all_postgres.sql:84: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(245) already exists.
+psql:storage/all_postgres.sql:85: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(246) already exists.
+psql:storage/all_postgres.sql:86: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(258) already exists.
+psql:storage/all_postgres.sql:87: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(260) already exists.
+psql:storage/all_postgres.sql:88: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(261) already exists.
+psql:storage/all_postgres.sql:89: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(273) already exists.
+psql:storage/all_postgres.sql:90: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(275) already exists.
+psql:storage/all_postgres.sql:91: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(276) already exists.
+psql:storage/all_postgres.sql:92: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(288) already exists.
+psql:storage/all_postgres.sql:93: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(290) already exists.
+psql:storage/all_postgres.sql:94: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(291) already exists.
+psql:storage/all_postgres.sql:95: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(302) already exists.
+psql:storage/all_postgres.sql:96: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(303) already exists.
+psql:storage/all_postgres.sql:97: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(304) already exists.
+psql:storage/all_postgres.sql:98: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(305) already exists.
+psql:storage/all_postgres.sql:99: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(306) already exists.
+psql:storage/all_postgres.sql:100: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(307) already exists.
+psql:storage/all_postgres.sql:101: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(308) already exists.
+psql:storage/all_postgres.sql:102: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(309) already exists.
+psql:storage/all_postgres.sql:103: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(310) already exists.
+psql:storage/all_postgres.sql:104: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(311) already exists.
+psql:storage/all_postgres.sql:105: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(312) already exists.
+psql:storage/all_postgres.sql:106: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(313) already exists.
+psql:storage/all_postgres.sql:107: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(314) already exists.
+psql:storage/all_postgres.sql:108: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(315) already exists.
+psql:storage/all_postgres.sql:109: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(316) already exists.
+psql:storage/all_postgres.sql:110: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(317) already exists.
+psql:storage/all_postgres.sql:111: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(318) already exists.
+psql:storage/all_postgres.sql:112: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(319) already exists.
+psql:storage/all_postgres.sql:113: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(320) already exists.
+psql:storage/all_postgres.sql:114: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(321) already exists.
+psql:storage/all_postgres.sql:115: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(322) already exists.
+psql:storage/all_postgres.sql:116: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(323) already exists.
+psql:storage/all_postgres.sql:117: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(324) already exists.
+psql:storage/all_postgres.sql:118: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(325) already exists.
+psql:storage/all_postgres.sql:119: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(326) already exists.
+psql:storage/all_postgres.sql:120: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(327) already exists.
+psql:storage/all_postgres.sql:121: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(328) already exists.
+psql:storage/all_postgres.sql:122: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(329) already exists.
+psql:storage/all_postgres.sql:123: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(330) already exists.
+psql:storage/all_postgres.sql:124: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(331) already exists.
+psql:storage/all_postgres.sql:125: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(332) already exists.
+psql:storage/all_postgres.sql:126: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(333) already exists.
+psql:storage/all_postgres.sql:127: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(334) already exists.
+psql:storage/all_postgres.sql:128: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(335) already exists.
+psql:storage/all_postgres.sql:129: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(336) already exists.
+psql:storage/all_postgres.sql:130: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(337) already exists.
+psql:storage/all_postgres.sql:131: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(338) already exists.
+psql:storage/all_postgres.sql:132: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(339) already exists.
+psql:storage/all_postgres.sql:133: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(340) already exists.
+psql:storage/all_postgres.sql:134: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(341) already exists.
+psql:storage/all_postgres.sql:135: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(342) already exists.
+psql:storage/all_postgres.sql:136: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(343) already exists.
+psql:storage/all_postgres.sql:137: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(344) already exists.
+psql:storage/all_postgres.sql:138: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(345) already exists.
+psql:storage/all_postgres.sql:139: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(346) already exists.
+psql:storage/all_postgres.sql:140: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(347) already exists.
+psql:storage/all_postgres.sql:141: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(348) already exists.
+psql:storage/all_postgres.sql:142: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(349) already exists.
+psql:storage/all_postgres.sql:143: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(350) already exists.
+psql:storage/all_postgres.sql:144: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(351) already exists.
+psql:storage/all_postgres.sql:145: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(352) already exists.
+psql:storage/all_postgres.sql:146: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(353) already exists.
+psql:storage/all_postgres.sql:147: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(354) already exists.
+psql:storage/all_postgres.sql:148: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(355) already exists.
+psql:storage/all_postgres.sql:149: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(356) already exists.
+psql:storage/all_postgres.sql:150: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(357) already exists.
+psql:storage/all_postgres.sql:151: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(358) already exists.
+psql:storage/all_postgres.sql:152: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(359) already exists.
+psql:storage/all_postgres.sql:153: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(360) already exists.
+psql:storage/all_postgres.sql:154: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(361) already exists.
+psql:storage/all_postgres.sql:155: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(362) already exists.
+psql:storage/all_postgres.sql:156: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(363) already exists.
+psql:storage/all_postgres.sql:157: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(364) already exists.
+psql:storage/all_postgres.sql:158: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(365) already exists.
+psql:storage/all_postgres.sql:159: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(366) already exists.
+psql:storage/all_postgres.sql:160: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(367) already exists.
+psql:storage/all_postgres.sql:161: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(368) already exists.
+psql:storage/all_postgres.sql:162: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(369) already exists.
+psql:storage/all_postgres.sql:163: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(370) already exists.
+psql:storage/all_postgres.sql:164: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(371) already exists.
+psql:storage/all_postgres.sql:165: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(372) already exists.
+psql:storage/all_postgres.sql:166: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(373) already exists.
+psql:storage/all_postgres.sql:167: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(374) already exists.
+psql:storage/all_postgres.sql:168: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(375) already exists.
+psql:storage/all_postgres.sql:169: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(376) already exists.
+psql:storage/all_postgres.sql:170: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(377) already exists.
+psql:storage/all_postgres.sql:171: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(378) already exists.
+psql:storage/all_postgres.sql:172: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(379) already exists.
+psql:storage/all_postgres.sql:173: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(380) already exists.
+psql:storage/all_postgres.sql:174: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(381) already exists.
+psql:storage/all_postgres.sql:175: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(382) already exists.
+psql:storage/all_postgres.sql:176: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(383) already exists.
+psql:storage/all_postgres.sql:177: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(384) already exists.
+psql:storage/all_postgres.sql:178: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(385) already exists.
+psql:storage/all_postgres.sql:179: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(386) already exists.
+psql:storage/all_postgres.sql:180: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(387) already exists.
+psql:storage/all_postgres.sql:181: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(388) already exists.
+psql:storage/all_postgres.sql:182: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(389) already exists.
+psql:storage/all_postgres.sql:183: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(390) already exists.
+psql:storage/all_postgres.sql:184: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(391) already exists.
+psql:storage/all_postgres.sql:185: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(392) already exists.
+psql:storage/all_postgres.sql:186: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(393) already exists.
+psql:storage/all_postgres.sql:187: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(394) already exists.
+psql:storage/all_postgres.sql:188: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(395) already exists.
+psql:storage/all_postgres.sql:189: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(396) already exists.
+psql:storage/all_postgres.sql:190: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(397) already exists.
+psql:storage/all_postgres.sql:191: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(398) already exists.
+psql:storage/all_postgres.sql:192: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(399) already exists.
+psql:storage/all_postgres.sql:193: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(400) already exists.
+psql:storage/all_postgres.sql:194: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(401) already exists.
+psql:storage/all_postgres.sql:195: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(402) already exists.
+psql:storage/all_postgres.sql:196: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(403) already exists.
+psql:storage/all_postgres.sql:197: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(404) already exists.
+psql:storage/all_postgres.sql:198: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(405) already exists.
+psql:storage/all_postgres.sql:199: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(406) already exists.
+psql:storage/all_postgres.sql:200: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(407) already exists.
+psql:storage/all_postgres.sql:201: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(408) already exists.
+psql:storage/all_postgres.sql:202: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(409) already exists.
+psql:storage/all_postgres.sql:203: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(410) already exists.
+psql:storage/all_postgres.sql:204: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(411) already exists.
+psql:storage/all_postgres.sql:205: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(412) already exists.
+psql:storage/all_postgres.sql:206: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(413) already exists.
+psql:storage/all_postgres.sql:207: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(414) already exists.
+psql:storage/all_postgres.sql:208: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(415) already exists.
+psql:storage/all_postgres.sql:209: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(416) already exists.
+psql:storage/all_postgres.sql:210: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(417) already exists.
+psql:storage/all_postgres.sql:211: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(418) already exists.
+psql:storage/all_postgres.sql:212: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(419) already exists.
+psql:storage/all_postgres.sql:213: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(420) already exists.
+psql:storage/all_postgres.sql:214: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(421) already exists.
+psql:storage/all_postgres.sql:215: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(422) already exists.
+psql:storage/all_postgres.sql:216: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(423) already exists.
+psql:storage/all_postgres.sql:217: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(424) already exists.
+psql:storage/all_postgres.sql:218: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(425) already exists.
+psql:storage/all_postgres.sql:219: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(426) already exists.
+psql:storage/all_postgres.sql:220: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(427) already exists.
+psql:storage/all_postgres.sql:221: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(428) already exists.
+psql:storage/all_postgres.sql:222: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(429) already exists.
+psql:storage/all_postgres.sql:223: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(430) already exists.
+psql:storage/all_postgres.sql:224: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(431) already exists.
+psql:storage/all_postgres.sql:225: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(432) already exists.
+psql:storage/all_postgres.sql:226: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(433) already exists.
+psql:storage/all_postgres.sql:227: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(434) already exists.
+psql:storage/all_postgres.sql:228: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(435) already exists.
+psql:storage/all_postgres.sql:229: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(436) already exists.
+psql:storage/all_postgres.sql:230: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(437) already exists.
+psql:storage/all_postgres.sql:231: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(438) already exists.
+psql:storage/all_postgres.sql:232: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(439) already exists.
+psql:storage/all_postgres.sql:233: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(440) already exists.
+psql:storage/all_postgres.sql:234: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(441) already exists.
+psql:storage/all_postgres.sql:235: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(442) already exists.
+psql:storage/all_postgres.sql:236: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(443) already exists.
+psql:storage/all_postgres.sql:237: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(444) already exists.
+psql:storage/all_postgres.sql:238: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(445) already exists.
+psql:storage/all_postgres.sql:239: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(446) already exists.
+psql:storage/all_postgres.sql:240: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(447) already exists.
+psql:storage/all_postgres.sql:241: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(448) already exists.
+psql:storage/all_postgres.sql:242: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(449) already exists.
+psql:storage/all_postgres.sql:243: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(450) already exists.
+psql:storage/all_postgres.sql:244: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(451) already exists.
+psql:storage/all_postgres.sql:245: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(452) already exists.
+psql:storage/all_postgres.sql:246: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(453) already exists.
+psql:storage/all_postgres.sql:247: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(454) already exists.
+psql:storage/all_postgres.sql:248: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(455) already exists.
+psql:storage/all_postgres.sql:249: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(456) already exists.
+psql:storage/all_postgres.sql:250: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(457) already exists.
+psql:storage/all_postgres.sql:251: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(458) already exists.
+psql:storage/all_postgres.sql:252: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(459) already exists.
+psql:storage/all_postgres.sql:253: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(460) already exists.
+psql:storage/all_postgres.sql:254: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(461) already exists.
+psql:storage/all_postgres.sql:255: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(462) already exists.
+psql:storage/all_postgres.sql:256: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(463) already exists.
+psql:storage/all_postgres.sql:257: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(464) already exists.
+psql:storage/all_postgres.sql:258: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(465) already exists.
+psql:storage/all_postgres.sql:259: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(466) already exists.
+psql:storage/all_postgres.sql:260: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(467) already exists.
+psql:storage/all_postgres.sql:261: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(468) already exists.
+psql:storage/all_postgres.sql:262: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(469) already exists.
+psql:storage/all_postgres.sql:263: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(470) already exists.
+psql:storage/all_postgres.sql:264: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(471) already exists.
+psql:storage/all_postgres.sql:265: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(472) already exists.
+psql:storage/all_postgres.sql:266: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(473) already exists.
+psql:storage/all_postgres.sql:267: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(474) already exists.
+psql:storage/all_postgres.sql:268: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(475) already exists.
+psql:storage/all_postgres.sql:269: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(476) already exists.
+psql:storage/all_postgres.sql:270: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(477) already exists.
+psql:storage/all_postgres.sql:271: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(478) already exists.
+psql:storage/all_postgres.sql:272: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(479) already exists.
+psql:storage/all_postgres.sql:273: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(480) already exists.
+psql:storage/all_postgres.sql:274: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(481) already exists.
+psql:storage/all_postgres.sql:275: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(482) already exists.
+psql:storage/all_postgres.sql:276: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(483) already exists.
+psql:storage/all_postgres.sql:277: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(484) already exists.
+psql:storage/all_postgres.sql:278: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(485) already exists.
+psql:storage/all_postgres.sql:279: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(486) already exists.
+psql:storage/all_postgres.sql:280: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(487) already exists.
+psql:storage/all_postgres.sql:281: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(488) already exists.
+psql:storage/all_postgres.sql:282: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(489) already exists.
+psql:storage/all_postgres.sql:283: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(490) already exists.
+psql:storage/all_postgres.sql:284: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(491) already exists.
+psql:storage/all_postgres.sql:285: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(492) already exists.
+psql:storage/all_postgres.sql:286: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(493) already exists.
+psql:storage/all_postgres.sql:287: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(494) already exists.
+psql:storage/all_postgres.sql:288: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(495) already exists.
+psql:storage/all_postgres.sql:289: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(496) already exists.
+psql:storage/all_postgres.sql:290: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(497) already exists.
+psql:storage/all_postgres.sql:291: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(498) already exists.
+psql:storage/all_postgres.sql:292: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(499) already exists.
+psql:storage/all_postgres.sql:293: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(500) already exists.
+psql:storage/all_postgres.sql:294: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(501) already exists.
+psql:storage/all_postgres.sql:295: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(502) already exists.
+psql:storage/all_postgres.sql:296: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(503) already exists.
+psql:storage/all_postgres.sql:297: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(504) already exists.
+psql:storage/all_postgres.sql:298: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(505) already exists.
+psql:storage/all_postgres.sql:299: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(506) already exists.
+psql:storage/all_postgres.sql:300: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(507) already exists.
+psql:storage/all_postgres.sql:301: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(508) already exists.
+psql:storage/all_postgres.sql:302: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(509) already exists.
+psql:storage/all_postgres.sql:303: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(510) already exists.
+psql:storage/all_postgres.sql:304: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(511) already exists.
+psql:storage/all_postgres.sql:305: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(512) already exists.
+psql:storage/all_postgres.sql:306: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(513) already exists.
+psql:storage/all_postgres.sql:307: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(514) already exists.
+psql:storage/all_postgres.sql:308: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(515) already exists.
+psql:storage/all_postgres.sql:309: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(516) already exists.
+psql:storage/all_postgres.sql:310: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(517) already exists.
+psql:storage/all_postgres.sql:311: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(518) already exists.
+psql:storage/all_postgres.sql:312: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(519) already exists.
+psql:storage/all_postgres.sql:313: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(520) already exists.
+psql:storage/all_postgres.sql:314: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(521) already exists.
+psql:storage/all_postgres.sql:315: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(522) already exists.
+psql:storage/all_postgres.sql:316: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(523) already exists.
+psql:storage/all_postgres.sql:317: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(524) already exists.
+psql:storage/all_postgres.sql:318: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(525) already exists.
+psql:storage/all_postgres.sql:319: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(526) already exists.
+psql:storage/all_postgres.sql:320: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(527) already exists.
+psql:storage/all_postgres.sql:321: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(528) already exists.
+psql:storage/all_postgres.sql:322: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(529) already exists.
+psql:storage/all_postgres.sql:323: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(530) already exists.
+psql:storage/all_postgres.sql:324: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(531) already exists.
+psql:storage/all_postgres.sql:325: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(532) already exists.
+psql:storage/all_postgres.sql:326: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(533) already exists.
+psql:storage/all_postgres.sql:327: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(534) already exists.
+psql:storage/all_postgres.sql:328: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(535) already exists.
+psql:storage/all_postgres.sql:329: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(536) already exists.
+psql:storage/all_postgres.sql:330: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(537) already exists.
+psql:storage/all_postgres.sql:331: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(538) already exists.
+psql:storage/all_postgres.sql:332: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(539) already exists.
+psql:storage/all_postgres.sql:333: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(540) already exists.
+psql:storage/all_postgres.sql:334: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(541) already exists.
+psql:storage/all_postgres.sql:335: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(542) already exists.
+psql:storage/all_postgres.sql:336: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(543) already exists.
+psql:storage/all_postgres.sql:337: ERROR:  duplicate key value violates unique constraint "active_storage_blobs_pkey"
+DETAIL:  Key (id)=(544) already exists.
+psql:storage/all_postgres.sql:338: ERROR:  duplicate key value violates unique constraint "categories_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:339: ERROR:  duplicate key value violates unique constraint "categories_pkey"
+DETAIL:  Key (id)=(3) already exists.
+psql:storage/all_postgres.sql:340: ERROR:  duplicate key value violates unique constraint "categories_pkey"
+DETAIL:  Key (id)=(4) already exists.
+psql:storage/all_postgres.sql:341: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(5) already exists.
+psql:storage/all_postgres.sql:342: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(7) already exists.
+psql:storage/all_postgres.sql:343: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(8) already exists.
+psql:storage/all_postgres.sql:344: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(20) already exists.
+psql:storage/all_postgres.sql:345: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(22) already exists.
+psql:storage/all_postgres.sql:346: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(23) already exists.
+psql:storage/all_postgres.sql:347: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(35) already exists.
+psql:storage/all_postgres.sql:348: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(37) already exists.
+psql:storage/all_postgres.sql:349: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(38) already exists.
+psql:storage/all_postgres.sql:350: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(50) already exists.
+psql:storage/all_postgres.sql:351: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(52) already exists.
+psql:storage/all_postgres.sql:352: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(53) already exists.
+psql:storage/all_postgres.sql:353: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(65) already exists.
+psql:storage/all_postgres.sql:354: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(67) already exists.
+psql:storage/all_postgres.sql:355: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(68) already exists.
+psql:storage/all_postgres.sql:356: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(80) already exists.
+psql:storage/all_postgres.sql:357: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(82) already exists.
+psql:storage/all_postgres.sql:358: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(83) already exists.
+psql:storage/all_postgres.sql:359: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(95) already exists.
+psql:storage/all_postgres.sql:360: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(97) already exists.
+psql:storage/all_postgres.sql:361: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(98) already exists.
+psql:storage/all_postgres.sql:362: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(110) already exists.
+psql:storage/all_postgres.sql:363: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(112) already exists.
+psql:storage/all_postgres.sql:364: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(113) already exists.
+psql:storage/all_postgres.sql:365: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(125) already exists.
+psql:storage/all_postgres.sql:366: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(127) already exists.
+psql:storage/all_postgres.sql:367: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(128) already exists.
+psql:storage/all_postgres.sql:368: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(140) already exists.
+psql:storage/all_postgres.sql:369: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(142) already exists.
+psql:storage/all_postgres.sql:370: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(143) already exists.
+psql:storage/all_postgres.sql:371: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(155) already exists.
+psql:storage/all_postgres.sql:372: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(157) already exists.
+psql:storage/all_postgres.sql:373: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(158) already exists.
+psql:storage/all_postgres.sql:374: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(170) already exists.
+psql:storage/all_postgres.sql:375: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(172) already exists.
+psql:storage/all_postgres.sql:376: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(173) already exists.
+psql:storage/all_postgres.sql:377: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(185) already exists.
+psql:storage/all_postgres.sql:378: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(187) already exists.
+psql:storage/all_postgres.sql:379: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(188) already exists.
+psql:storage/all_postgres.sql:380: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(200) already exists.
+psql:storage/all_postgres.sql:381: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(201) already exists.
+psql:storage/all_postgres.sql:382: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(213) already exists.
+psql:storage/all_postgres.sql:383: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(215) already exists.
+psql:storage/all_postgres.sql:384: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(216) already exists.
+psql:storage/all_postgres.sql:385: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(228) already exists.
+psql:storage/all_postgres.sql:386: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(230) already exists.
+psql:storage/all_postgres.sql:387: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(231) already exists.
+psql:storage/all_postgres.sql:388: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(243) already exists.
+psql:storage/all_postgres.sql:389: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(245) already exists.
+psql:storage/all_postgres.sql:390: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(246) already exists.
+psql:storage/all_postgres.sql:391: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(258) already exists.
+psql:storage/all_postgres.sql:392: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(260) already exists.
+psql:storage/all_postgres.sql:393: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(261) already exists.
+psql:storage/all_postgres.sql:394: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(273) already exists.
+psql:storage/all_postgres.sql:395: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(275) already exists.
+psql:storage/all_postgres.sql:396: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(276) already exists.
+psql:storage/all_postgres.sql:397: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(288) already exists.
+psql:storage/all_postgres.sql:398: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(290) already exists.
+psql:storage/all_postgres.sql:399: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(291) already exists.
+psql:storage/all_postgres.sql:400: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(302) already exists.
+psql:storage/all_postgres.sql:401: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(303) already exists.
+psql:storage/all_postgres.sql:402: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(304) already exists.
+psql:storage/all_postgres.sql:403: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(305) already exists.
+psql:storage/all_postgres.sql:404: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(306) already exists.
+psql:storage/all_postgres.sql:405: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(307) already exists.
+psql:storage/all_postgres.sql:406: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(308) already exists.
+psql:storage/all_postgres.sql:407: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(309) already exists.
+psql:storage/all_postgres.sql:408: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(310) already exists.
+psql:storage/all_postgres.sql:409: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(311) already exists.
+psql:storage/all_postgres.sql:410: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(312) already exists.
+psql:storage/all_postgres.sql:411: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(313) already exists.
+psql:storage/all_postgres.sql:412: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(314) already exists.
+psql:storage/all_postgres.sql:413: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(315) already exists.
+psql:storage/all_postgres.sql:414: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(316) already exists.
+psql:storage/all_postgres.sql:415: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(317) already exists.
+psql:storage/all_postgres.sql:416: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(318) already exists.
+psql:storage/all_postgres.sql:417: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(319) already exists.
+psql:storage/all_postgres.sql:418: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(320) already exists.
+psql:storage/all_postgres.sql:419: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(321) already exists.
+psql:storage/all_postgres.sql:420: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(322) already exists.
+psql:storage/all_postgres.sql:421: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(323) already exists.
+psql:storage/all_postgres.sql:422: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(324) already exists.
+psql:storage/all_postgres.sql:423: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(325) already exists.
+psql:storage/all_postgres.sql:424: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(326) already exists.
+psql:storage/all_postgres.sql:425: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(327) already exists.
+psql:storage/all_postgres.sql:426: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(328) already exists.
+psql:storage/all_postgres.sql:427: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(329) already exists.
+psql:storage/all_postgres.sql:428: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(330) already exists.
+psql:storage/all_postgres.sql:429: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(331) already exists.
+psql:storage/all_postgres.sql:430: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(332) already exists.
+psql:storage/all_postgres.sql:431: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(333) already exists.
+psql:storage/all_postgres.sql:432: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(334) already exists.
+psql:storage/all_postgres.sql:433: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(335) already exists.
+psql:storage/all_postgres.sql:434: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(336) already exists.
+psql:storage/all_postgres.sql:435: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(337) already exists.
+psql:storage/all_postgres.sql:436: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(338) already exists.
+psql:storage/all_postgres.sql:437: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(339) already exists.
+psql:storage/all_postgres.sql:438: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(340) already exists.
+psql:storage/all_postgres.sql:439: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(341) already exists.
+psql:storage/all_postgres.sql:440: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(342) already exists.
+psql:storage/all_postgres.sql:441: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(343) already exists.
+psql:storage/all_postgres.sql:442: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(344) already exists.
+psql:storage/all_postgres.sql:443: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(345) already exists.
+psql:storage/all_postgres.sql:444: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(346) already exists.
+psql:storage/all_postgres.sql:445: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(347) already exists.
+psql:storage/all_postgres.sql:446: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(348) already exists.
+psql:storage/all_postgres.sql:447: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(349) already exists.
+psql:storage/all_postgres.sql:448: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(350) already exists.
+psql:storage/all_postgres.sql:449: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(351) already exists.
+psql:storage/all_postgres.sql:450: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(352) already exists.
+psql:storage/all_postgres.sql:451: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(353) already exists.
+psql:storage/all_postgres.sql:452: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(354) already exists.
+psql:storage/all_postgres.sql:453: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(355) already exists.
+psql:storage/all_postgres.sql:454: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(356) already exists.
+psql:storage/all_postgres.sql:455: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(357) already exists.
+psql:storage/all_postgres.sql:456: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(358) already exists.
+psql:storage/all_postgres.sql:457: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(359) already exists.
+psql:storage/all_postgres.sql:458: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(360) already exists.
+psql:storage/all_postgres.sql:459: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(361) already exists.
+psql:storage/all_postgres.sql:460: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(362) already exists.
+psql:storage/all_postgres.sql:461: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(363) already exists.
+psql:storage/all_postgres.sql:462: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(364) already exists.
+psql:storage/all_postgres.sql:463: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(365) already exists.
+psql:storage/all_postgres.sql:464: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(366) already exists.
+psql:storage/all_postgres.sql:465: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(367) already exists.
+psql:storage/all_postgres.sql:466: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(368) already exists.
+psql:storage/all_postgres.sql:467: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(369) already exists.
+psql:storage/all_postgres.sql:468: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(370) already exists.
+psql:storage/all_postgres.sql:469: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(371) already exists.
+psql:storage/all_postgres.sql:470: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(372) already exists.
+psql:storage/all_postgres.sql:471: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(373) already exists.
+psql:storage/all_postgres.sql:472: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(374) already exists.
+psql:storage/all_postgres.sql:473: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(375) already exists.
+psql:storage/all_postgres.sql:474: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(376) already exists.
+psql:storage/all_postgres.sql:475: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(377) already exists.
+psql:storage/all_postgres.sql:476: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(378) already exists.
+psql:storage/all_postgres.sql:477: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(379) already exists.
+psql:storage/all_postgres.sql:478: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(380) already exists.
+psql:storage/all_postgres.sql:479: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(381) already exists.
+psql:storage/all_postgres.sql:480: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(382) already exists.
+psql:storage/all_postgres.sql:481: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(383) already exists.
+psql:storage/all_postgres.sql:482: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(384) already exists.
+psql:storage/all_postgres.sql:483: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(385) already exists.
+psql:storage/all_postgres.sql:484: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(386) already exists.
+psql:storage/all_postgres.sql:485: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(387) already exists.
+psql:storage/all_postgres.sql:486: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(388) already exists.
+psql:storage/all_postgres.sql:487: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(389) already exists.
+psql:storage/all_postgres.sql:488: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(390) already exists.
+psql:storage/all_postgres.sql:489: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(391) already exists.
+psql:storage/all_postgres.sql:490: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(392) already exists.
+psql:storage/all_postgres.sql:491: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(393) already exists.
+psql:storage/all_postgres.sql:492: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(394) already exists.
+psql:storage/all_postgres.sql:493: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(395) already exists.
+psql:storage/all_postgres.sql:494: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(396) already exists.
+psql:storage/all_postgres.sql:495: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(397) already exists.
+psql:storage/all_postgres.sql:496: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(398) already exists.
+psql:storage/all_postgres.sql:497: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(399) already exists.
+psql:storage/all_postgres.sql:498: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(400) already exists.
+psql:storage/all_postgres.sql:499: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(401) already exists.
+psql:storage/all_postgres.sql:500: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(402) already exists.
+psql:storage/all_postgres.sql:501: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(403) already exists.
+psql:storage/all_postgres.sql:502: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(404) already exists.
+psql:storage/all_postgres.sql:503: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(405) already exists.
+psql:storage/all_postgres.sql:504: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(406) already exists.
+psql:storage/all_postgres.sql:505: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(407) already exists.
+psql:storage/all_postgres.sql:506: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(408) already exists.
+psql:storage/all_postgres.sql:507: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(409) already exists.
+psql:storage/all_postgres.sql:508: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(410) already exists.
+psql:storage/all_postgres.sql:509: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(411) already exists.
+psql:storage/all_postgres.sql:510: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(412) already exists.
+psql:storage/all_postgres.sql:511: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(413) already exists.
+psql:storage/all_postgres.sql:512: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(414) already exists.
+psql:storage/all_postgres.sql:513: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(415) already exists.
+psql:storage/all_postgres.sql:514: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(416) already exists.
+psql:storage/all_postgres.sql:515: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(417) already exists.
+psql:storage/all_postgres.sql:516: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(418) already exists.
+psql:storage/all_postgres.sql:517: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(419) already exists.
+psql:storage/all_postgres.sql:518: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(420) already exists.
+psql:storage/all_postgres.sql:519: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(421) already exists.
+psql:storage/all_postgres.sql:520: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(422) already exists.
+psql:storage/all_postgres.sql:521: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(423) already exists.
+psql:storage/all_postgres.sql:522: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(424) already exists.
+psql:storage/all_postgres.sql:523: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(425) already exists.
+psql:storage/all_postgres.sql:524: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(426) already exists.
+psql:storage/all_postgres.sql:525: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(427) already exists.
+psql:storage/all_postgres.sql:526: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(428) already exists.
+psql:storage/all_postgres.sql:527: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(429) already exists.
+psql:storage/all_postgres.sql:528: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(430) already exists.
+psql:storage/all_postgres.sql:529: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(431) already exists.
+psql:storage/all_postgres.sql:530: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(432) already exists.
+psql:storage/all_postgres.sql:531: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(433) already exists.
+psql:storage/all_postgres.sql:532: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(434) already exists.
+psql:storage/all_postgres.sql:533: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(435) already exists.
+psql:storage/all_postgres.sql:534: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(436) already exists.
+psql:storage/all_postgres.sql:535: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(437) already exists.
+psql:storage/all_postgres.sql:536: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(438) already exists.
+psql:storage/all_postgres.sql:537: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(439) already exists.
+psql:storage/all_postgres.sql:538: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(440) already exists.
+psql:storage/all_postgres.sql:539: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(441) already exists.
+psql:storage/all_postgres.sql:540: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(442) already exists.
+psql:storage/all_postgres.sql:541: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(443) already exists.
+psql:storage/all_postgres.sql:542: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(444) already exists.
+psql:storage/all_postgres.sql:543: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(445) already exists.
+psql:storage/all_postgres.sql:544: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(446) already exists.
+psql:storage/all_postgres.sql:545: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(447) already exists.
+psql:storage/all_postgres.sql:546: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(448) already exists.
+psql:storage/all_postgres.sql:547: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(449) already exists.
+psql:storage/all_postgres.sql:548: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(450) already exists.
+psql:storage/all_postgres.sql:549: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(451) already exists.
+psql:storage/all_postgres.sql:550: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(452) already exists.
+psql:storage/all_postgres.sql:551: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(453) already exists.
+psql:storage/all_postgres.sql:552: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(454) already exists.
+psql:storage/all_postgres.sql:553: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(455) already exists.
+psql:storage/all_postgres.sql:554: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(456) already exists.
+psql:storage/all_postgres.sql:555: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(457) already exists.
+psql:storage/all_postgres.sql:556: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(458) already exists.
+psql:storage/all_postgres.sql:557: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(459) already exists.
+psql:storage/all_postgres.sql:558: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(460) already exists.
+psql:storage/all_postgres.sql:559: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(461) already exists.
+psql:storage/all_postgres.sql:560: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(462) already exists.
+psql:storage/all_postgres.sql:561: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(463) already exists.
+psql:storage/all_postgres.sql:562: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(464) already exists.
+psql:storage/all_postgres.sql:563: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(465) already exists.
+psql:storage/all_postgres.sql:564: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(466) already exists.
+psql:storage/all_postgres.sql:565: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(467) already exists.
+psql:storage/all_postgres.sql:566: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(468) already exists.
+psql:storage/all_postgres.sql:567: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(469) already exists.
+psql:storage/all_postgres.sql:568: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(470) already exists.
+psql:storage/all_postgres.sql:569: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(471) already exists.
+psql:storage/all_postgres.sql:570: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(472) already exists.
+psql:storage/all_postgres.sql:571: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(473) already exists.
+psql:storage/all_postgres.sql:572: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(474) already exists.
+psql:storage/all_postgres.sql:573: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(475) already exists.
+psql:storage/all_postgres.sql:574: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(476) already exists.
+psql:storage/all_postgres.sql:575: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(477) already exists.
+psql:storage/all_postgres.sql:576: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(478) already exists.
+psql:storage/all_postgres.sql:577: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(479) already exists.
+psql:storage/all_postgres.sql:578: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(480) already exists.
+psql:storage/all_postgres.sql:579: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(481) already exists.
+psql:storage/all_postgres.sql:580: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(482) already exists.
+psql:storage/all_postgres.sql:581: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(483) already exists.
+psql:storage/all_postgres.sql:582: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(484) already exists.
+psql:storage/all_postgres.sql:583: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(485) already exists.
+psql:storage/all_postgres.sql:584: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(486) already exists.
+psql:storage/all_postgres.sql:585: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(487) already exists.
+psql:storage/all_postgres.sql:586: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(488) already exists.
+psql:storage/all_postgres.sql:587: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(489) already exists.
+psql:storage/all_postgres.sql:588: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(490) already exists.
+psql:storage/all_postgres.sql:589: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(491) already exists.
+psql:storage/all_postgres.sql:590: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(492) already exists.
+psql:storage/all_postgres.sql:591: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(493) already exists.
+psql:storage/all_postgres.sql:592: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(494) already exists.
+psql:storage/all_postgres.sql:593: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(495) already exists.
+psql:storage/all_postgres.sql:594: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(496) already exists.
+psql:storage/all_postgres.sql:595: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(497) already exists.
+psql:storage/all_postgres.sql:596: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(498) already exists.
+psql:storage/all_postgres.sql:597: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(499) already exists.
+psql:storage/all_postgres.sql:598: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(500) already exists.
+psql:storage/all_postgres.sql:599: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(501) already exists.
+psql:storage/all_postgres.sql:600: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(502) already exists.
+psql:storage/all_postgres.sql:601: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(503) already exists.
+psql:storage/all_postgres.sql:602: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(504) already exists.
+psql:storage/all_postgres.sql:603: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(505) already exists.
+psql:storage/all_postgres.sql:604: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(506) already exists.
+psql:storage/all_postgres.sql:605: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(507) already exists.
+psql:storage/all_postgres.sql:606: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(508) already exists.
+psql:storage/all_postgres.sql:607: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(509) already exists.
+psql:storage/all_postgres.sql:608: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(510) already exists.
+psql:storage/all_postgres.sql:609: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(511) already exists.
+psql:storage/all_postgres.sql:610: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(512) already exists.
+psql:storage/all_postgres.sql:611: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(513) already exists.
+psql:storage/all_postgres.sql:612: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(514) already exists.
+psql:storage/all_postgres.sql:613: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(515) already exists.
+psql:storage/all_postgres.sql:614: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(516) already exists.
+psql:storage/all_postgres.sql:615: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(517) already exists.
+psql:storage/all_postgres.sql:616: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(518) already exists.
+psql:storage/all_postgres.sql:617: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(519) already exists.
+psql:storage/all_postgres.sql:618: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(520) already exists.
+psql:storage/all_postgres.sql:619: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(521) already exists.
+psql:storage/all_postgres.sql:620: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(522) already exists.
+psql:storage/all_postgres.sql:621: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(523) already exists.
+psql:storage/all_postgres.sql:622: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(524) already exists.
+psql:storage/all_postgres.sql:623: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(525) already exists.
+psql:storage/all_postgres.sql:624: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(526) already exists.
+psql:storage/all_postgres.sql:625: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(527) already exists.
+psql:storage/all_postgres.sql:626: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(528) already exists.
+psql:storage/all_postgres.sql:627: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(529) already exists.
+psql:storage/all_postgres.sql:628: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(530) already exists.
+psql:storage/all_postgres.sql:629: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(531) already exists.
+psql:storage/all_postgres.sql:630: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(532) already exists.
+psql:storage/all_postgres.sql:631: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(533) already exists.
+psql:storage/all_postgres.sql:632: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(534) already exists.
+psql:storage/all_postgres.sql:633: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(535) already exists.
+psql:storage/all_postgres.sql:634: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(536) already exists.
+psql:storage/all_postgres.sql:635: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(537) already exists.
+psql:storage/all_postgres.sql:636: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(538) already exists.
+psql:storage/all_postgres.sql:637: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(539) already exists.
+psql:storage/all_postgres.sql:638: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(540) already exists.
+psql:storage/all_postgres.sql:639: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(541) already exists.
+psql:storage/all_postgres.sql:640: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(542) already exists.
+psql:storage/all_postgres.sql:641: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(543) already exists.
+psql:storage/all_postgres.sql:642: ERROR:  duplicate key value violates unique constraint "active_storage_attachments_pkey"
+DETAIL:  Key (id)=(544) already exists.
+psql:storage/all_postgres.sql:643: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(1) already exists.
+psql:storage/all_postgres.sql:644: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:645: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(3) already exists.
+psql:storage/all_postgres.sql:646: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(4) already exists.
+psql:storage/all_postgres.sql:647: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:41:17.257001','2025-04-08 23:41:18.788515',1,1,43);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:648: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-08 23:41:18.567331','2025-04-21 20:49:59.154421',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:649: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(7) already exists.
+psql:storage/all_postgres.sql:650: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:41:21.227202','2025-04-08 23:41:22.757375',1,1,44);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:651: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(9) already exists.
+psql:storage/all_postgres.sql:652: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-08 23:41:23.858015','2025-04-21 20:50:04.635807',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:653: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(11) already exists.
+psql:storage/all_postgres.sql:654: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(12) already exists.
+psql:storage/all_postgres.sql:655: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(13) already exists.
+psql:storage/all_postgres.sql:656: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-08 23:41:29.122283','2025-04-21 20:50:12.066042',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:657: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(15) already exists.
+psql:storage/all_postgres.sql:658: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(16) already exists.
+psql:storage/all_postgres.sql:659: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(17) already exists.
+psql:storage/all_postgres.sql:660: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(18) already exists.
+psql:storage/all_postgres.sql:661: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(19) already exists.
+psql:storage/all_postgres.sql:662: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(20) already exists.
+psql:storage/all_postgres.sql:663: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(21) already exists.
+psql:storage/all_postgres.sql:664: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(22) already exists.
+psql:storage/all_postgres.sql:665: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(23) already exists.
+psql:storage/all_postgres.sql:666: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(24) already exists.
+psql:storage/all_postgres.sql:667: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(25) already exists.
+psql:storage/all_postgres.sql:668: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(26) already exists.
+psql:storage/all_postgres.sql:669: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(27) already exists.
+psql:storage/all_postgres.sql:670: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(28) already exists.
+psql:storage/all_postgres.sql:671: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(29) already exists.
+psql:storage/all_postgres.sql:672: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(30) already exists.
+psql:storage/all_postgres.sql:673: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(31) already exists.
+psql:storage/all_postgres.sql:674: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(32) already exists.
+psql:storage/all_postgres.sql:675: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(33) already exists.
+psql:storage/all_postgres.sql:676: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(34) already exists.
+psql:storage/all_postgres.sql:677: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(35) already exists.
+psql:storage/all_postgres.sql:678: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(36) already exists.
+psql:storage/all_postgres.sql:679: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(37) already exists.
+psql:storage/all_postgres.sql:680: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(38) already exists.
+psql:storage/all_postgres.sql:681: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(39) already exists.
+psql:storage/all_postgres.sql:682: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(40) already exists.
+psql:storage/all_postgres.sql:683: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(41) already exists.
+psql:storage/all_postgres.sql:684: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(42) already exists.
+psql:storage/all_postgres.sql:685: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(43) already exists.
+psql:storage/all_postgres.sql:686: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(44) already exists.
+psql:storage/all_postgres.sql:687: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(45) already exists.
+psql:storage/all_postgres.sql:688: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(46) already exists.
+psql:storage/all_postgres.sql:689: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(47) already exists.
+psql:storage/all_postgres.sql:690: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:42:14.291738','2025-04-21 20:50:54.706547',2,1,52);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:691: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(49) already exists.
+psql:storage/all_postgres.sql:692: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(50) already exists.
+psql:storage/all_postgres.sql:693: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(51) already exists.
+psql:storage/all_postgres.sql:694: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(52) already exists.
+psql:storage/all_postgres.sql:695: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(53) already exists.
+psql:storage/all_postgres.sql:696: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(54) already exists.
+psql:storage/all_postgres.sql:697: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(55) already exists.
+psql:storage/all_postgres.sql:698: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(56) already exists.
+psql:storage/all_postgres.sql:699: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(57) already exists.
+psql:storage/all_postgres.sql:700: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(58) already exists.
+psql:storage/all_postgres.sql:701: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(59) already exists.
+psql:storage/all_postgres.sql:702: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(60) already exists.
+psql:storage/all_postgres.sql:703: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:42:32.471655','2025-04-21 20:51:09.608096',3,1,48);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:704: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(62) already exists.
+psql:storage/all_postgres.sql:705: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(63) already exists.
+psql:storage/all_postgres.sql:706: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(64) already exists.
+psql:storage/all_postgres.sql:707: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(65) already exists.
+psql:storage/all_postgres.sql:708: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(66) already exists.
+psql:storage/all_postgres.sql:709: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(67) already exists.
+psql:storage/all_postgres.sql:710: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(68) already exists.
+psql:storage/all_postgres.sql:711: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:42:43.121110','2025-04-21 20:51:17.333168',3,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:712: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(70) already exists.
+psql:storage/all_postgres.sql:713: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(71) already exists.
+psql:storage/all_postgres.sql:714: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(72) already exists.
+psql:storage/all_postgres.sql:715: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(73) already exists.
+psql:storage/all_postgres.sql:716: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(74) already exists.
+psql:storage/all_postgres.sql:717: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(75) already exists.
+psql:storage/all_postgres.sql:718: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(76) already exists.
+psql:storage/all_postgres.sql:719: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:42:53.695269','2025-04-21 20:51:28.881057',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:720: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(78) already exists.
+psql:storage/all_postgres.sql:721: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(79) already exists.
+psql:storage/all_postgres.sql:722: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(80) already exists.
+psql:storage/all_postgres.sql:723: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(81) already exists.
+psql:storage/all_postgres.sql:724: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:43:00.336202','2025-04-08 23:43:01.921255',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:725: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(83) already exists.
+psql:storage/all_postgres.sql:726: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:43:02.987426','2025-04-21 20:51:34.858668',4,1,44);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:727: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:43:04.320932','2025-04-21 20:51:36.420706',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:728: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:43:05.628585','2025-04-21 20:51:37.854938',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:729: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(87) already exists.
+psql:storage/all_postgres.sql:730: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(88) already exists.
+psql:storage/all_postgres.sql:731: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:43:09.597315','2025-04-21 20:51:42.069122',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:732: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-08 23:43:10.897935','2025-04-21 20:51:43.683334',4,1,64);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:733: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(91) already exists.
+psql:storage/all_postgres.sql:734: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(92) already exists.
+psql:storage/all_postgres.sql:735: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(93) already exists.
+psql:storage/all_postgres.sql:736: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(94) already exists.
+psql:storage/all_postgres.sql:737: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(95) already exists.
+psql:storage/all_postgres.sql:738: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(96) already exists.
+psql:storage/all_postgres.sql:739: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(97) already exists.
+psql:storage/all_postgres.sql:740: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-08 23:43:21.474489','2025-04-08 23:43:23.093138',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:741: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(99) already exists.
+psql:storage/all_postgres.sql:742: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(100) already exists.
+psql:storage/all_postgres.sql:743: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(101) already exists.
+psql:storage/all_postgres.sql:744: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(102) already exists.
+psql:storage/all_postgres.sql:745: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(103) already exists.
+psql:storage/all_postgres.sql:746: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(104) already exists.
+psql:storage/all_postgres.sql:747: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(105) already exists.
+psql:storage/all_postgres.sql:748: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-10 11:40:12.252262','2025-04-21 20:52:02.434651',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:749: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(107) already exists.
+psql:storage/all_postgres.sql:750: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(108) already exists.
+psql:storage/all_postgres.sql:751: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(109) already exists.
+psql:storage/all_postgres.sql:752: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(110) already exists.
+psql:storage/all_postgres.sql:753: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(111) already exists.
+psql:storage/all_postgres.sql:754: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(112) already exists.
+psql:storage/all_postgres.sql:755: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(113) already exists.
+psql:storage/all_postgres.sql:756: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(114) already exists.
+psql:storage/all_postgres.sql:757: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-10 11:40:24.286845','2025-04-21 20:52:13.536981',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:758: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-10 11:40:25.475862','2025-04-21 20:52:14.742158',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:759: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(117) already exists.
+psql:storage/all_postgres.sql:760: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(118) already exists.
+psql:storage/all_postgres.sql:761: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(119) already exists.
+psql:storage/all_postgres.sql:762: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(120) already exists.
+psql:storage/all_postgres.sql:763: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(121) already exists.
+psql:storage/all_postgres.sql:764: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(122) already exists.
+psql:storage/all_postgres.sql:765: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(123) already exists.
+psql:storage/all_postgres.sql:766: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(124) already exists.
+psql:storage/all_postgres.sql:767: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-10 11:40:38.262295','2025-04-10 11:40:39.561019',1,1,47);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:768: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(126) already exists.
+psql:storage/all_postgres.sql:769: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(127) already exists.
+psql:storage/all_postgres.sql:770: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-10 11:40:41.997703','2025-04-10 11:40:43.155162',2,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:771: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(129) already exists.
+psql:storage/all_postgres.sql:772: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(130) already exists.
+psql:storage/all_postgres.sql:773: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(131) already exists.
+psql:storage/all_postgres.sql:774: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(132) already exists.
+psql:storage/all_postgres.sql:775: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(133) already exists.
+psql:storage/all_postgres.sql:776: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(134) already exists.
+psql:storage/all_postgres.sql:777: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(135) already exists.
+psql:storage/all_postgres.sql:778: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(136) already exists.
+psql:storage/all_postgres.sql:779: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(137) already exists.
+psql:storage/all_postgres.sql:780: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(138) already exists.
+psql:storage/all_postgres.sql:781: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(139) already exists.
+psql:storage/all_postgres.sql:782: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(140) already exists.
+psql:storage/all_postgres.sql:783: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(141) already exists.
+psql:storage/all_postgres.sql:784: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(142) already exists.
+psql:storage/all_postgres.sql:785: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(143) already exists.
+psql:storage/all_postgres.sql:786: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(144) already exists.
+psql:storage/all_postgres.sql:787: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(145) already exists.
+psql:storage/all_postgres.sql:788: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(146) already exists.
+psql:storage/all_postgres.sql:789: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-10 11:41:07.775859','2025-04-21 20:52:51.991315',2,1,67);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:790: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(148) already exists.
+psql:storage/all_postgres.sql:791: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(149) already exists.
+psql:storage/all_postgres.sql:792: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(150) already exists.
+psql:storage/all_postgres.sql:793: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(151) already exists.
+psql:storage/all_postgres.sql:794: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(152) already exists.
+psql:storage/all_postgres.sql:795: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(153) already exists.
+psql:storage/all_postgres.sql:796: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(154) already exists.
+psql:storage/all_postgres.sql:797: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(155) already exists.
+psql:storage/all_postgres.sql:798: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(156) already exists.
+psql:storage/all_postgres.sql:799: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(157) already exists.
+psql:storage/all_postgres.sql:800: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-10 11:41:23.783982','2025-04-10 11:41:24.978758',3,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:801: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(159) already exists.
+psql:storage/all_postgres.sql:802: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(160) already exists.
+psql:storage/all_postgres.sql:803: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(161) already exists.
+psql:storage/all_postgres.sql:804: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(162) already exists.
+psql:storage/all_postgres.sql:805: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(163) already exists.
+psql:storage/all_postgres.sql:806: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(164) already exists.
+psql:storage/all_postgres.sql:807: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(165) already exists.
+psql:storage/all_postgres.sql:808: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(166) already exists.
+psql:storage/all_postgres.sql:809: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(167) already exists.
+psql:storage/all_postgres.sql:810: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(168) already exists.
+psql:storage/all_postgres.sql:811: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(169) already exists.
+psql:storage/all_postgres.sql:812: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(170) already exists.
+psql:storage/all_postgres.sql:813: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(171) already exists.
+psql:storage/all_postgres.sql:814: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(172) already exists.
+psql:storage/all_postgres.sql:815: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(173) already exists.
+psql:storage/all_postgres.sql:816: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(174) already exists.
+psql:storage/all_postgres.sql:817: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(175) already exists.
+psql:storage/all_postgres.sql:818: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(176) already exists.
+psql:storage/all_postgres.sql:819: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(177) already exists.
+psql:storage/all_postgres.sql:820: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-10 11:41:50.989031','2025-04-21 20:53:29.256937',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:821: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(179) already exists.
+psql:storage/all_postgres.sql:822: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(180) already exists.
+psql:storage/all_postgres.sql:823: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(181) already exists.
+psql:storage/all_postgres.sql:824: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(182) already exists.
+psql:storage/all_postgres.sql:825: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(183) already exists.
+psql:storage/all_postgres.sql:826: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(184) already exists.
+psql:storage/all_postgres.sql:827: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(185) already exists.
+psql:storage/all_postgres.sql:828: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(186) already exists.
+psql:storage/all_postgres.sql:829: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(187) already exists.
+psql:storage/all_postgres.sql:830: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(188) already exists.
+psql:storage/all_postgres.sql:831: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(189) already exists.
+psql:storage/all_postgres.sql:832: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(190) already exists.
+psql:storage/all_postgres.sql:833: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(191) already exists.
+psql:storage/all_postgres.sql:834: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(192) already exists.
+psql:storage/all_postgres.sql:835: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(193) already exists.
+psql:storage/all_postgres.sql:836: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(194) already exists.
+psql:storage/all_postgres.sql:837: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(195) already exists.
+psql:storage/all_postgres.sql:838: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(196) already exists.
+psql:storage/all_postgres.sql:839: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-10 11:42:17.245687','2025-04-21 20:53:52.568728',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:840: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(198) already exists.
+psql:storage/all_postgres.sql:841: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(199) already exists.
+psql:storage/all_postgres.sql:842: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(200) already exists.
+psql:storage/all_postgres.sql:843: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(201) already exists.
+psql:storage/all_postgres.sql:844: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(202) already exists.
+psql:storage/all_postgres.sql:845: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(203) already exists.
+psql:storage/all_postgres.sql:846: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(204) already exists.
+psql:storage/all_postgres.sql:847: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(205) already exists.
+psql:storage/all_postgres.sql:848: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(206) already exists.
+psql:storage/all_postgres.sql:849: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(207) already exists.
+psql:storage/all_postgres.sql:850: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-17 05:38:05.112200','2025-04-21 20:54:04.600748',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:851: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(209) already exists.
+psql:storage/all_postgres.sql:852: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(210) already exists.
+psql:storage/all_postgres.sql:853: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(211) already exists.
+psql:storage/all_postgres.sql:854: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(212) already exists.
+psql:storage/all_postgres.sql:855: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-17 05:38:11.952344','2025-04-21 20:54:11.833429',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:856: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(214) already exists.
+psql:storage/all_postgres.sql:857: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(215) already exists.
+psql:storage/all_postgres.sql:858: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(216) already exists.
+psql:storage/all_postgres.sql:859: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-17 05:38:16.886998','2025-04-17 05:38:18.351438',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:860: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(218) already exists.
+psql:storage/all_postgres.sql:861: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(219) already exists.
+psql:storage/all_postgres.sql:862: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(220) already exists.
+psql:storage/all_postgres.sql:863: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(221) already exists.
+psql:storage/all_postgres.sql:864: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(222) already exists.
+psql:storage/all_postgres.sql:865: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(223) already exists.
+psql:storage/all_postgres.sql:866: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(224) already exists.
+psql:storage/all_postgres.sql:867: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(225) already exists.
+psql:storage/all_postgres.sql:868: ERROR:  column "category_id" is of type integer but expression is of type boolean
+LINE 1: ...-17 05:38:30.116390','2025-04-21 20:54:27.077342',TRUE,0,NUL...
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:869: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(227) already exists.
+psql:storage/all_postgres.sql:870: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(228) already exists.
+psql:storage/all_postgres.sql:871: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(229) already exists.
+psql:storage/all_postgres.sql:872: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:38:34.989607','2025-04-17 05:38:36.456206',2,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:873: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(231) already exists.
+psql:storage/all_postgres.sql:874: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(232) already exists.
+psql:storage/all_postgres.sql:875: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(233) already exists.
+psql:storage/all_postgres.sql:876: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(234) already exists.
+psql:storage/all_postgres.sql:877: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(235) already exists.
+psql:storage/all_postgres.sql:878: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(236) already exists.
+psql:storage/all_postgres.sql:879: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(237) already exists.
+psql:storage/all_postgres.sql:880: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(238) already exists.
+psql:storage/all_postgres.sql:881: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(239) already exists.
+psql:storage/all_postgres.sql:882: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(240) already exists.
+psql:storage/all_postgres.sql:883: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(241) already exists.
+psql:storage/all_postgres.sql:884: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(242) already exists.
+psql:storage/all_postgres.sql:885: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(243) already exists.
+psql:storage/all_postgres.sql:886: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(244) already exists.
+psql:storage/all_postgres.sql:887: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(245) already exists.
+psql:storage/all_postgres.sql:888: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(246) already exists.
+psql:storage/all_postgres.sql:889: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(247) already exists.
+psql:storage/all_postgres.sql:890: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(248) already exists.
+psql:storage/all_postgres.sql:891: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(249) already exists.
+psql:storage/all_postgres.sql:892: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(250) already exists.
+psql:storage/all_postgres.sql:893: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(251) already exists.
+psql:storage/all_postgres.sql:894: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(252) already exists.
+psql:storage/all_postgres.sql:895: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(253) already exists.
+psql:storage/all_postgres.sql:896: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(254) already exists.
+psql:storage/all_postgres.sql:897: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-17 05:39:09.640647','2025-04-21 20:55:01.625687',3,1,44);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:898: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(256) already exists.
+psql:storage/all_postgres.sql:899: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(257) already exists.
+psql:storage/all_postgres.sql:900: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(258) already exists.
+psql:storage/all_postgres.sql:901: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(259) already exists.
+psql:storage/all_postgres.sql:902: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(260) already exists.
+psql:storage/all_postgres.sql:903: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(261) already exists.
+psql:storage/all_postgres.sql:904: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-17 05:39:19.753928','2025-04-17 05:39:21.351865',3,1,45);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:905: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(263) already exists.
+psql:storage/all_postgres.sql:906: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(264) already exists.
+psql:storage/all_postgres.sql:907: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:39:24.175383','2025-04-21 20:55:15.342711',3,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:908: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(266) already exists.
+psql:storage/all_postgres.sql:909: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(267) already exists.
+psql:storage/all_postgres.sql:910: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(268) already exists.
+psql:storage/all_postgres.sql:911: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(269) already exists.
+psql:storage/all_postgres.sql:912: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(270) already exists.
+psql:storage/all_postgres.sql:913: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(271) already exists.
+psql:storage/all_postgres.sql:914: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(272) already exists.
+psql:storage/all_postgres.sql:915: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(273) already exists.
+psql:storage/all_postgres.sql:916: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(274) already exists.
+psql:storage/all_postgres.sql:917: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(275) already exists.
+psql:storage/all_postgres.sql:918: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(276) already exists.
+psql:storage/all_postgres.sql:919: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(277) already exists.
+psql:storage/all_postgres.sql:920: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(278) already exists.
+psql:storage/all_postgres.sql:921: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(279) already exists.
+psql:storage/all_postgres.sql:922: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:39:44.094637','2025-04-21 20:55:33.558268',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:923: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(281) already exists.
+psql:storage/all_postgres.sql:924: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(282) already exists.
+psql:storage/all_postgres.sql:925: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(283) already exists.
+psql:storage/all_postgres.sql:926: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:39:49.103257','2025-04-21 20:55:39.258192',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:927: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(285) already exists.
+psql:storage/all_postgres.sql:928: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-17 05:39:51.988639','2025-04-21 20:55:42.103349',4,1,55);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:929: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(287) already exists.
+psql:storage/all_postgres.sql:930: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:39:54.560089','2025-04-21 20:55:45.152917',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:931: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(289) already exists.
+psql:storage/all_postgres.sql:932: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(290) already exists.
+psql:storage/all_postgres.sql:933: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...-17 05:39:58.984543','2025-04-21 20:55:48.104355',4,0,NULL);
+                                                               ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:934: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(292) already exists.
+psql:storage/all_postgres.sql:935: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(293) already exists.
+psql:storage/all_postgres.sql:936: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(294) already exists.
+psql:storage/all_postgres.sql:937: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(295) already exists.
+psql:storage/all_postgres.sql:938: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(296) already exists.
+psql:storage/all_postgres.sql:939: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(297) already exists.
+psql:storage/all_postgres.sql:940: ERROR:  column "on_sale" is of type boolean but expression is of type integer
+LINE 1: ...04-17 05:40:08.564465','2025-04-21 20:55:55.545701',4,1,50);
+                                                                 ^
+HINT:  You will need to rewrite or cast the expression.
+psql:storage/all_postgres.sql:941: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(299) already exists.
+psql:storage/all_postgres.sql:942: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(300) already exists.
+psql:storage/all_postgres.sql:943: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(301) already exists.
+psql:storage/all_postgres.sql:944: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(302) already exists.
+psql:storage/all_postgres.sql:945: ERROR:  duplicate key value violates unique constraint "products_pkey"
+DETAIL:  Key (id)=(303) already exists.
+psql:storage/all_postgres.sql:946: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250408232709) already exists.
+psql:storage/all_postgres.sql:947: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250406213642) already exists.
+psql:storage/all_postgres.sql:948: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404153832) already exists.
+psql:storage/all_postgres.sql:949: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404152511) already exists.
+psql:storage/all_postgres.sql:950: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404142704) already exists.
+psql:storage/all_postgres.sql:951: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404141513) already exists.
+psql:storage/all_postgres.sql:952: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404140050) already exists.
+psql:storage/all_postgres.sql:953: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404135405) already exists.
+psql:storage/all_postgres.sql:954: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404134726) already exists.
+psql:storage/all_postgres.sql:955: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250404134035) already exists.
+psql:storage/all_postgres.sql:956: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250409170007) already exists.
+psql:storage/all_postgres.sql:957: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250409170029) already exists.
+psql:storage/all_postgres.sql:958: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250410113340) already exists.
+psql:storage/all_postgres.sql:959: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250416213752) already exists.
+psql:storage/all_postgres.sql:960: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250417000001) already exists.
+psql:storage/all_postgres.sql:961: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250417000002) already exists.
+psql:storage/all_postgres.sql:962: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250417064731) already exists.
+psql:storage/all_postgres.sql:963: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250417072927) already exists.
+psql:storage/all_postgres.sql:964: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250418000001) already exists.
+psql:storage/all_postgres.sql:965: ERROR:  duplicate key value violates unique constraint "schema_migrations_pkey"
+DETAIL:  Key (version)=(20250423000000) already exists.
+psql:storage/all_postgres.sql:966: ERROR:  duplicate key value violates unique constraint "ar_internal_metadata_pkey"
+DETAIL:  Key (key)=(schema_sha1) already exists.
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:storage/all_postgres.sql:984: ERROR:  duplicate key value violates unique constraint "pages_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:985: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:986: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(3) already exists.
+psql:storage/all_postgres.sql:987: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(4) already exists.
+psql:storage/all_postgres.sql:988: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(5) already exists.
+psql:storage/all_postgres.sql:989: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(6) already exists.
+psql:storage/all_postgres.sql:990: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(7) already exists.
+psql:storage/all_postgres.sql:991: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(8) already exists.
+psql:storage/all_postgres.sql:992: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(9) already exists.
+psql:storage/all_postgres.sql:993: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(10) already exists.
+psql:storage/all_postgres.sql:994: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(11) already exists.
+psql:storage/all_postgres.sql:995: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(12) already exists.
+psql:storage/all_postgres.sql:996: ERROR:  duplicate key value violates unique constraint "provinces_pkey"
+DETAIL:  Key (id)=(13) already exists.
+psql:storage/all_postgres.sql:997: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(1) already exists.
+psql:storage/all_postgres.sql:998: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(2) already exists.
+psql:storage/all_postgres.sql:999: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(3) already exists.
+psql:storage/all_postgres.sql:1000: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(4) already exists.
+psql:storage/all_postgres.sql:1001: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(5) already exists.
+psql:storage/all_postgres.sql:1002: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(6) already exists.
+psql:storage/all_postgres.sql:1003: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(7) already exists.
+psql:storage/all_postgres.sql:1004: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(8) already exists.
+psql:storage/all_postgres.sql:1005: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(9) already exists.
+psql:storage/all_postgres.sql:1006: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(10) already exists.
+psql:storage/all_postgres.sql:1007: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(11) already exists.
+psql:storage/all_postgres.sql:1008: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(12) already exists.
+psql:storage/all_postgres.sql:1009: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(13) already exists.
+psql:storage/all_postgres.sql:1010: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(14) already exists.
+psql:storage/all_postgres.sql:1011: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(15) already exists.
+psql:storage/all_postgres.sql:1012: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(16) already exists.
+psql:storage/all_postgres.sql:1013: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(17) already exists.
+psql:storage/all_postgres.sql:1014: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(18) already exists.
+psql:storage/all_postgres.sql:1015: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(19) already exists.
+psql:storage/all_postgres.sql:1016: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(20) already exists.
+psql:storage/all_postgres.sql:1017: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(21) already exists.
+psql:storage/all_postgres.sql:1018: ERROR:  duplicate key value violates unique constraint "customers_pkey"
+DETAIL:  Key (id)=(22) already exists.
+psql:storage/all_postgres.sql:1020: ERROR:  relation "index_active_admin_comments_on_author" already exists
+psql:storage/all_postgres.sql:1021: ERROR:  relation "index_active_admin_comments_on_namespace" already exists
+psql:storage/all_postgres.sql:1022: ERROR:  relation "index_active_admin_comments_on_resource" already exists
+psql:storage/all_postgres.sql:1023: ERROR:  relation "index_active_storage_blobs_on_key" already exists
+psql:storage/all_postgres.sql:1024: ERROR:  relation "index_admin_users_on_email" already exists
+psql:storage/all_postgres.sql:1025: ERROR:  relation "index_admin_users_on_reset_password_token" already exists
+psql:storage/all_postgres.sql:1026: ERROR:  relation "index_active_storage_attachments_on_blob_id" already exists
+psql:storage/all_postgres.sql:1027: ERROR:  relation "index_active_storage_attachments_uniqueness" already exists
+psql:storage/all_postgres.sql:1028: ERROR:  relation "index_active_storage_variant_records_uniqueness" already exists
+psql:storage/all_postgres.sql:1029: ERROR:  relation "index_products_on_category_id" already exists
+CREATE INDEX
+psql:storage/all_postgres.sql:1031: ERROR:  relation "index_pages_on_slug" already exists
+psql:storage/all_postgres.sql:1032: ERROR:  relation "index_provinces_on_code" already exists
+psql:storage/all_postgres.sql:1033: ERROR:  relation "index_customers_on_province_id" already exists

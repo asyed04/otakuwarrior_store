@@ -39,3 +39,11 @@
 
 #ignore google cloud credentials
 [google_service_account.json](http://_vscodecontentref_/1)
+
+syeda7@Aether:~$ sudo -u postgres psql
+[sudo] password for syeda7: 
+Sorry, try again.
+[sudo] password for syeda7: 
+psql (12.22 (Ubuntu 12.22-0ubuntu0.20.04.2))
+Type "help" for help.
+
